@@ -2,62 +2,92 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>El ventanal de la sierra</title>
     </head>
     <body>
         <header>
-            <!-- Menú general con enlaces informativos -->
-            <div>
-                <ul>
-                    <li><a>Horarios</a></li>
-                    <li><a>Servicios</a></li>
-                    <li><a>Cómo llegar</a></li>
-                    <li><a>Contactos</a></li>
-                    <li><a>Alquiler de espacio</a></li>
-                    <li><a>Idiomas</a></li>
-                </ul>
-            </div>
+            <!-- Parte menú -->
+            <section id="menu">
+                <!-- Menú Secundario -->
+                <div id="menuSecundario">
+                    <ul>
+                        <li><a href="#">Horarios</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Cómo llegar</a></li>
+                        <li><a href="#">Contactos</a></li>
+                        <li><a href="#">Alquiler de espacio</a></li>
+                        <li><a href="#">Idiomas</a></li>
+                    </ul>
+                </div>
 
-            <!-- Navegación hacia otras secciones del sitio web -->
-            <div>
-                <ul>
-                    <li>Tiendas</li>
-                    <li>Restaruación</li>
-                    <li>Ocio</li>
-                    <li>Eventos</li>
-                    <li>Newsletter</li>
-                    <li>Blog</li>
-                </ul>
-            </div>
+                <!-- Menú Principal -->
+                <div id="menuPrincipal">
+                    <ul>
+                        <li><a href="#">Tiendas</a></li>
+                        <li><a href="#">Restaruación</a></li>
+                        <li><a href="#">Ocio</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </section>
         </header>
 
         <article>
-            <!-- Aquí se puede incluir un carrusel de imágenes promocionales -->
-            <!-- carrusel 1? img-->
+            <!-- primer carrusel de imágenes  -->
+            <section id="carruselImg">
+                <div class="slider-container">
+                    <img
+                        class="slider-item"
+                        src="https://images.unsplash.com/photo-1580501170961-bb0dbf63a6df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80" />
+                    <img
+                        class="slider-item"
+                        src="https://images.unsplash.com/photo-1580501170888-80668882ca0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" />
+                    <img
+                        class="slider-item"
+                        src="https://images.unsplash.com/photo-1572508589584-94d778209dd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" />
+                </div>
+            </section>
 
-            <!-- Posible segundo carrusel con logos de tiendas -->
-            <!-- carrusel 2? logo tiendas-->
+            <!-- segundo carrusel con logos de tiendas -->
+            <section id="slider-logos">
+                <div class="slider-container">
+                    <img
+                        class="slider-item"
+                        src="https://images.unsplash.com/photo-1580501170961-bb0dbf63a6df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80" />
+                    <img
+                        class="slider-item"
+                        src="https://images.unsplash.com/photo-1580501170888-80668882ca0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" />
+                    <img
+                        class="slider-item"
+                        src="https://images.unsplash.com/photo-1572508589584-94d778209dd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80" />
+                </div>
+            </section>
 
-            <!-- Sección destacada de servicios -->
+            <!-- Sección  de servicios -->
             <section id="servicios">
                 <h2>Servicios</h2>
-                <!-- Aquí podrían ir íconos o descripciones de los servicios -->
+                <!-- íconos y/o descripciones de los servicios -->
             </section>
         </article>
 
         <footer>
             <!-- Pie de página con información útil y enlaces -->
             <div class="container">
+                <!-- Contenedor principal -->
                 <div class="row">
+                    <!-- Fila que contiene varias columnas -->
                     <div>
-                        <!-- Misión o mensaje institucional -->
+                        <!-- 1 columna -->
                         <p>
                             Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
                             proporcionarles emociones.
                         </p>
                     </div>
                     <div>
-                        <!-- Información de horarios -->
+                        <!-- 2 columna -->
                         <p id="titlefooter1">HORARIO</p>
                         <p>
                             Comercial: 10:00 a 22:00<br />
@@ -66,7 +96,7 @@
                         </p>
                     </div>
                     <div>
-                        <!-- Datos de contacto y redes sociales -->
+                        <!-- 3 columna -->
                         <p id="titlefooter2">CONTACTO</p>
                         <p>
                             <a href="#">Escríbenos aquí</a><br />
@@ -82,8 +112,14 @@
                         </p>
                     </div>
                 </div>
-                <!--¿contenido adicional? -->
-                <div></div>
+                <!--contenido adicional -->
+                <div>
+                    <p>
+                        © El Ventanal de la Sierra 2025 - <a href="#">Aviso legal</a> -
+                        <a href="#">Política de privacidad</a> - <a href="#">Política de Cookies</a> -
+                        <a href="#">Gestionar preferencias de Cookies</a>
+                    </p>
+                </div>
             </div>
         </footer>
     </body>
