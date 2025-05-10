@@ -1,42 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviso Legal</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Aviso Legal</title>
 
-    <header>
-        <h1>Aviso Legal</h1>
-    </header>
+        <!-- Bootstrap 5 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-    <article>
-        <p>
-            elventanaldelasierra.es es un dominio en Internet titularidad de CDAD. PROP. PARQUE COMERCIAL EL VENTANAL DE LA SIERRA, con CIF H-87306304, con domicilio en AVDA. DE LA TEJERA, 2 - PARQUE COMERCIAL, 28770 - COLMENAR VIEJO (MADRID), en adelante CC.
-        </p>
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway:wght@400;700&display=swap"
+            rel="stylesheet" />
 
-        <h3>Legislación</h3>
-        <p>
-            Con carácter general las relaciones entre CC con los Usuarios de los servicios presentes en este sitio  web se encuentran sometidas a la legislación y jurisdicción españolas.
-        </p>
+        <!-- CSS -->
+    </head>
 
-        <h3>Uso y acceso de Usuarios</h3>
-        <p>
-            El Usuario queda informado y acepta que el acceso a la presente web no supone, en modo alguno, el inicio de una relación comercial con CC.
-        </p>
+    <body>
+        <!--contenedor de ancho completo. Fondo oscuro. Espacio arriba y abajo.-->
+        <header class="container-fluid bg-dark py-3">
+            <!-- fila flexible (d-flex), espaciado entre elementos, alineación vertical centrada.-->
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="portada.html"><img src="images/logo-centro-comercial.png" alt="Logo" /></a>
+                <!-- ul class="nav": Crea una lista de elementos de navegación.
+                                            	li class="nav-item": Cada elemento del menú.
+                                            	a class="nav-link: Un enlace dentro del menú-->
+                <nav>
+                    <ul class="nav">
+                        <!-- menu secundario-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://elventanaldelasierra.es/horario">Horarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Servicios" href="https://elventanaldelasierra.es/servicios"
+                                >Servicios</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Visitar" href="visitanos.html">Cómo llegar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Contacto" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://elventanaldelasierra.es/alquiler-espacios"
+                                >Alquiler de espacio</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
 
-        <h3>Propiedad intelectual e industrial</h3>
-        <p>
-            Los derechos de propiedad intelectual del contenido de la páginas web, su diseño gráfico y códigos son titularidad de CC y, por tanto, queda prohibida su reproducción, distribución, comunicación pública, transformación o cualquier otra actividad que se pueda realizar con los contenidos de sus páginas web ni aún citando las fuentes, salvo consentimiento por escrito de CC.
-        </p>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Tiendas" href="tiendas.html">Tiendas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Restauracion" href="restaurante.html">Restauración</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Ocio" href="ocio.html">Ocio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Newsletter" href="https://elventanaldelasierra.es/newsletter"
+                                >Newsletter</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Cine" href="cine.html">Cine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Blog" href="https://elventanaldelasierra.es/blog/">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
 
-        <h3>Contenido de la web y enlaces (links)</h3>
-        <p>
-            CC se reserva el derecho a actualizar, modificar o eliminar la información contenida en su página web pudiendo incluso limitar o no permitir el acceso a dicha información a ciertos usuarios.
-            CC no asume responsabilidad alguna por la información contenida en páginas web de terceros a las que se pueda acceder por "links" o enlaces desde cualquier página web propiedad de CC. La presencia de "links" o enlaces en las páginas web de CC tiene finalidad meramente informativa y en ningún caso supone sugerencia, invitación o recomendación sobre los mismos. Por ello, tanto el presente Aviso como la Política de Privacidad solo son de aplicación a la página web de CC y no se garantiza en los accesos a través de enlaces con este sitio, ni a los enlaces desde este sitio con otras webs.
-        </p>
-    </article>
-    
-</body>
+                <div>
+                    <a href="https://www.facebook.com/elventanaldelasierra" target="_blank"
+                        ><i class="bi bi-facebook fs-4 me-2"></i
+                    ></a>
+                    <a href="https://www.youtube.com/user/elventanaldelasierra" target="_blank"
+                        ><i class="bi bi-youtube fs-4 me-2"></i
+                    ></a>
+                    <a href="https://www.instagram.com/elventanaldelasierracc/" target="_blank"
+                        ><i class="bi bi-instagram fs-4"></i
+                    ></a>
+                </div>
+            </div>
+        </header>
+
+        <article>
+            <h1>Aviso Legal</h1>
+
+            <p>
+                elventanaldelasierra.es es un dominio en Internet titularidad de CDAD. PROP. PARQUE COMERCIAL EL
+                VENTANAL DE LA SIERRA, con CIF H-87306304, con domicilio en AVDA. DE LA TEJERA, 2 - PARQUE COMERCIAL,
+                28770 - COLMENAR VIEJO (MADRID), en adelante CC.
+            </p>
+
+            <h3>Legislación</h3>
+            <p>
+                Con carácter general las relaciones entre CC con los Usuarios de los servicios presentes en este sitio
+                web se encuentran sometidas a la legislación y jurisdicción españolas.
+            </p>
+
+            <h3>Uso y acceso de Usuarios</h3>
+            <p>
+                El Usuario queda informado y acepta que el acceso a la presente web no supone, en modo alguno, el inicio
+                de una relación comercial con CC.
+            </p>
+
+            <h3>Propiedad intelectual e industrial</h3>
+            <p>
+                Los derechos de propiedad intelectual del contenido de la páginas web, su diseño gráfico y códigos son
+                titularidad de CC y, por tanto, queda prohibida su reproducción, distribución, comunicación pública,
+                transformación o cualquier otra actividad que se pueda realizar con los contenidos de sus páginas web ni
+                aún citando las fuentes, salvo consentimiento por escrito de CC.
+            </p>
+
+            <h3>Contenido de la web y enlaces (links)</h3>
+            <p>
+                CC se reserva el derecho a actualizar, modificar o eliminar la información contenida en su página web
+                pudiendo incluso limitar o no permitir el acceso a dicha información a ciertos usuarios. CC no asume
+                responsabilidad alguna por la información contenida en páginas web de terceros a las que se pueda
+                acceder por "links" o enlaces desde cualquier página web propiedad de CC. La presencia de "links" o
+                enlaces en las páginas web de CC tiene finalidad meramente informativa y en ningún caso supone
+                sugerencia, invitación o recomendación sobre los mismos. Por ello, tanto el presente Aviso como la
+                Política de Privacidad solo son de aplicación a la página web de CC y no se garantiza en los accesos a
+                través de enlaces con este sitio, ni a los enlaces desde este sitio con otras webs.
+            </p>
+        </article>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <div class="col-md-3">
+                        <p>
+                            Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
+                            proporcionarles emociones.
+                        </p>
+                        <a href="https://www.nhood.es/ target=_blank"
+                            ><img src="images/logo-centro-comercial-2.png"
+                        /></a>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Horarios</h5>
+                        <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Contacto</h5>
+                        <p>
+                            <a href="contacto.html" class="text-white">Escríbenos</a><br /><a
+                                href="tel:918473685"
+                                class="text-white"
+                                >91 847 36 85</a
+                            >
+                            <a class="color_foot_txt" href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank"
+                                >Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</a
+                            >
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://www.facebook.com/elventanaldelasierra"
+                            ><i class="bi bi-facebook me-2 text-white"></i
+                        ></a>
+                        <a href="https://www.youtube.com/user/elventanaldelasierra"
+                            ><i class="bi bi-youtube me-2 text-white"></i
+                        ></a>
+                        <a href="https://www.instagram.com/elventanaldelasierracc/"
+                            ><i class="bi bi-instagram text-white"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            © El Ventanal de la Sierra 2025 -
+                            <a class="cBody" href="aviso_legal.html">Aviso legal</a>-
+                            <a class="cBody" href="https://elventanaldelasierra.es/politica-privacidad"
+                                >Política de privacidad</a
+                            >-
+                            <a class="cBody" href="https://elventanaldelasierra.es/politica-cookies"
+                                >Política de Cookies</a
+                            >-
+                            <a href="#">Gestionar preferencias de Cookies</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
