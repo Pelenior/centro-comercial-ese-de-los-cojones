@@ -21,17 +21,17 @@
     </head>
 
     <body>
-        <!--contenedor de ancho completo. Fondo oscuro. Espacio arriba y abajo.-->
-        <header class="container-fluid bg-dark py-3">
+         <!--contenedor de ancho completo.Fondo oscuro. Espacio arriba y abajo.-->
+        <header class="container-fluid bg-dark">
             <!-- fila flexible (d-flex), espaciado entre elementos, alineación vertical centrada.-->
             <div class="d-flex justify-content-between align-items-center">
                 <a href="portada.html"><img src="images/logo-centro-comercial.png" alt="Logo" /></a>
                 <!-- ul class="nav": Crea una lista de elementos de navegación.
-            	li class="nav-item": Cada elemento del menú.
-            	a class="nav-link: Un enlace dentro del menú-->
+                                            	li class="nav-item": Cada elemento del menú.
+                                            	a class="nav-link: Un enlace dentro del menú-->
                 <nav>
+                    <!--menu secundario-->
                     <ul class="nav">
-                        <!-- menu secundario-->
                         <li class="nav-item">
                             <a class="nav-link" href="https://elventanaldelasierra.es/horario">Horarios</a>
                         </li>
@@ -43,7 +43,9 @@
                         <li class="nav-item">
                             <a class="nav-link" alt="Visitar" href="visitanos.html">Cómo llegar</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" alt="Contacto" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Contacto" href="contacto.html">Contacto</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://elventanaldelasierra.es/alquiler-espacios"
                                 >Alquiler de espacio</a
@@ -53,6 +55,7 @@
                 </nav>
 
                 <nav>
+                    <!-- Menu Principal-->
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link" alt="Tiendas" href="tiendas.html">Tiendas</a>
@@ -91,17 +94,23 @@
             </div>
         </header>
 
-        <article>
-            <div style="position: relative">
-                <div class="row my-3 my-md-4 my-lg-5 mx-0 mx-md-3 mx-lg-5">
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-5 barBox">
-                        <h3>Ocio</h3>
+        <article class="container-fluid px-1 md-2" style="position: relative;">
+               <!--my-*: Margen vertical (top y bottom) que varía según el tamaño de pantalla:
+               mx-*: Margen horizontal:-->
+                <div class="row my-3 mx-0">
+                   <!--col-sm-12: ocupa todo el ancho en pantallas pequeñas
+                   col-md-6: ocupa la mitad en pantallas medianas
+                   col-lg-4: ocupa 1/3 en pantallas grandes
+                   mb-5: margen inferior grande, para separar verticalmente-->
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                        <h5>Ocio</h5>
                         <h2>Todas las categorías</h2>
                     </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-5"></div>
                 </div>
 
-                <div class="row my-3 my-md-4 my-lg-5 mx-0 mx-md-3 mx-lg-5">
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-5 barBox">
+                <div class="row my-3 mx-0">
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
                         <div class="localbox">
                             <a href="https://elventanaldelasierra.es/local/nova-jump">
                                 <img src="images/centro-comercial-17.jpg" />
@@ -117,7 +126,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-5 barBox">
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
                         <a href="https://elventanaldelasierra.es/local/pause-and-play">
                             <img src="images/centro-comercial-18.jpg" />
                             <p class="localName">PAUSE AND PLAY</p>
@@ -131,7 +140,7 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-5 barBox">
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
                         <a href="https://elventanaldelasierra.es/local/pause-and-play">
                             <img src="images/centro-comercial-19.jpg" />
 
@@ -146,65 +155,65 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
         </article>
 
-        <!-- Footer -->
-        <footer class="bg-dark text-white py-4">
-            <div class="container">
-                <div class="row text-center text-md-start">
-                    <div class="col-md-3">
-                        <p>
-                            Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
-                            proporcionarles emociones.
-                        </p>
-                        <a href="https://www.nhood.es/ target=_blank"
-                            ><img src="images/logo-centro-comercial-2.png"
-                        /></a>
-                    </div>
-                    <div class="col-md-3">
-                        <h5>Horarios</h5>
-                        <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h5>Contacto</h5>
-                        <p>
-                            <a href="contacto.html" class="text-white">Escríbenos</a><br /><a
-                                href="tel:918473685"
-                                class="text-white"
-                                >91 847 36 85</a
-                            >
-                            <a class="color_foot_txt" href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank"
-                                >Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</a
-                            >
-                        </p>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="https://www.facebook.com/elventanaldelasierra"
-                            ><i class="bi bi-facebook me-2 text-white"></i
-                        ></a>
-                        <a href="https://www.youtube.com/user/elventanaldelasierra"
-                            ><i class="bi bi-youtube me-2 text-white"></i
-                        ></a>
-                        <a href="https://www.instagram.com/elventanaldelasierracc/"
-                            ><i class="bi bi-instagram text-white"></i
-                        ></a>
-                    </div>
+       <!-- Footer -->
+        <footer class="container-fluid bg-dark text-white">
+            <!--márgenes (m) y padding (p) horizontales (x) con valores diferentes según el tamaño de pantalla 
+               pt-5: Padding arriba, para separar del contenido anterior.-->
+            <div class="row mx-1 px-1">
+                <div class="col-md-3">
+                    <p>
+                        Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
+                        proporcionarles emociones.
+                    </p>
+                    <a href="https://www.nhood.es/" target="_blank"><img src="images/logo-centro-comercial-2.png" /></a>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <p>
-                            © El Ventanal de la Sierra 2025 -
-                            <a class="cBody" href="aviso_legal.html">Aviso legal</a>-
-                            <a class="cBody" href="https://elventanaldelasierra.es/politica-privacidad"
-                                >Política de privacidad</a
-                            >-
-                            <a class="cBody" href="https://elventanaldelasierra.es/politica-cookies"
-                                >Política de Cookies</a
-                            >-
-                            <a href="#">Gestionar preferencias de Cookies</a>
-                        </p>
-                    </div>
+                <div class="col-md-3">
+                    <h5>Horarios</h5>
+                    <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p>
+                        <a href="contacto.html" class="text-white">Escríbenos</a><br /><a
+                            href="tel:918473685"
+                            class="text-white"
+                            >91 847 36 85</a
+                        >
+                        <a class="color_foot_txt" href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank"
+                            >Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</a
+                        >
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <!--Iconos de redes sociales usando Icons (bi bi-*).
+                       me-2: Añade margen a la derecha entre iconos.-->
+                    <a href="https://www.facebook.com/elventanaldelasierra"
+                        ><i class="bi bi-facebook me-2 text-white"></i
+                    ></a>
+                    <a href="https://www.youtube.com/user/elventanaldelasierra"
+                        ><i class="bi bi-youtube me-2 text-white"></i
+                    ></a>
+                    <a href="https://www.instagram.com/elventanaldelasierracc/"
+                        ><i class="bi bi-instagram text-white"></i
+                    ></a>
+                </div>
+            </div>
+            <!--mt-5: Margen superior para separarse de la fila anterior.-->
+            <div class="row smx-1 px-1">
+                <div class="col">
+                    <p>
+                        © El Ventanal de la Sierra 2025 -
+                        <a class="cBody" href="aviso_legal.html">Aviso legal</a>-
+                        <a class="cBody" href="https://elventanaldelasierra.es/politica-privacidad"
+                            >Política de privacidad</a
+                        >-
+                        <a class="cBody" href="https://elventanaldelasierra.es/politica-cookies">Política de Cookies</a
+                        >-
+                        <a href="#">Gestionar preferencias de Cookies</a>
+                    </p>
                 </div>
             </div>
         </footer>
