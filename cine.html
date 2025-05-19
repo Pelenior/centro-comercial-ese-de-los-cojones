@@ -1,15 +1,100 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
-        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Cine</title>
+
+        <!-- Bootstrap 5 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway:wght@400;700&display=swap"
+            rel="stylesheet" />
+
+        <!-- CSS -->
     </head>
+
     <body>
-        <header>
-            <h1>CINE</h1>
-            <h2>Info Cartelera</h2>
+        <!--contenedor de ancho completo. Fondo oscuro. Espacio arriba y abajo.-->
+        <header class="container-fluid bg-dark py-3">
+            <!-- fila flexible (d-flex), espaciado entre elementos, alineación vertical centrada.-->
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html"><img src="images/logo-centro-comercial.png" alt="Logo" /></a>
+                <!-- ul class="nav": Crea una lista de elementos de navegación.
+                                            	li class="nav-item": Cada elemento del menú.
+                                            	a class="nav-link: Un enlace dentro del menú-->
+                <nav>
+                    <ul class="nav">
+                        <!-- menu secundario-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://elventanaldelasierra.es/horario">Horarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Servicios" href="https://elventanaldelasierra.es/servicios"
+                                >Servicios</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Visitar" href="visitanos.html">Cómo llegar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Contacto" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://elventanaldelasierra.es/alquiler-espacios"
+                                >Alquiler de espacio</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Tiendas" href="tiendas.html">Tiendas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Restauracion" href="restaurante.html">Restauración</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Ocio" href="ocio.html">Ocio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Newsletter" href="https://elventanaldelasierra.es/newsletter"
+                                >Newsletter</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Cine" href="cine.html">Cine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Blog" href="https://elventanaldelasierra.es/blog/">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div>
+                    <a href="https://www.facebook.com/elventanaldelasierra" target="_blank"
+                        ><i class="bi bi-facebook fs-4 me-2"></i
+                    ></a>
+                    <a href="https://www.youtube.com/user/elventanaldelasierra" target="_blank"
+                        ><i class="bi bi-youtube fs-4 me-2"></i
+                    ></a>
+                    <a href="https://www.instagram.com/elventanaldelasierracc/" target="_blank"
+                        ><i class="bi bi-instagram fs-4"></i
+                    ></a>
+                </div>
+            </div>
         </header>
         <article>
+            <h1>CINE</h1>
+            <h2>Info Cartelera</h2>
             <section>
                 <h2>HORARIOS</h2>
                 <ol>
@@ -51,5 +136,65 @@
                 <div><a href="">Pagina de compra</a></div>
             </section>
         </article>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <div class="col-md-3">
+                        <p>
+                            Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
+                            proporcionarles emociones.
+                        </p>
+                        <a href="https://www.nhood.es/ target=_blank"
+                            ><img src="images/logo-centro-comercial-2.png"
+                        /></a>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Horarios</h5>
+                        <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Contacto</h5>
+                        <p>
+                            <a href="contacto.html" class="text-white">Escríbenos</a><br /><a
+                                href="tel:918473685"
+                                class="text-white"
+                                >91 847 36 85</a
+                            >
+                            <a class="color_foot_txt" href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank"
+                                >Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</a
+                            >
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://www.facebook.com/elventanaldelasierra"
+                            ><i class="bi bi-facebook me-2 text-white"></i
+                        ></a>
+                        <a href="https://www.youtube.com/user/elventanaldelasierra"
+                            ><i class="bi bi-youtube me-2 text-white"></i
+                        ></a>
+                        <a href="https://www.instagram.com/elventanaldelasierracc/"
+                            ><i class="bi bi-instagram text-white"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            © El Ventanal de la Sierra 2025 -
+                            <a class="cBody" href="aviso_legal.html">Aviso legal</a>-
+                            <a class="cBody" href="https://elventanaldelasierra.es/politica-privacidad"
+                                >Política de privacidad</a
+                            >-
+                            <a class="cBody" href="https://elventanaldelasierra.es/politica-cookies"
+                                >Política de Cookies</a
+                            >-
+                            <a href="#">Gestionar preferencias de Cookies</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

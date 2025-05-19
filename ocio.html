@@ -4,48 +4,382 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Ocio</title>
+
+        <!-- Bootstrap 5 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway:wght@400;700&display=swap"
+            rel="stylesheet" />
+
+        <!-- CSS -->
     </head>
 
     <body>
-        <h3>Ocio</h3>
+        <!--contenedor de ancho completo.Fondo oscuro. Espacio arriba y abajo.-->
+        <header class="container-fluid bg-dark">
+            <!-- fila flexible (d-flex), espaciado entre elementos, alineación vertical centrada.-->
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html"><img src="images/logo-centro-comercial.png" alt="Logo" /></a>
+                <!-- ul class="nav": Crea una lista de elementos de navegación.
+                                            	li class="nav-item": Cada elemento del menú.
+                                            	a class="nav-link: Un enlace dentro del menú-->
+                <nav>
+                    <!--menu secundario-->
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://elventanaldelasierra.es/horario">Horarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Servicios" href="https://elventanaldelasierra.es/servicios"
+                                >Servicios</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Visitar" href="visitanos.html">Cómo llegar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Contacto" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://elventanaldelasierra.es/alquiler-espacios"
+                                >Alquiler de espacio</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
 
-        <h2>Todas las categorías</h2>
-        <div>
-            <img src="images/centro-comercial-17.jpg" />
-            <h3>NOVA JUMP</h3>
-            <a href="https://www.novajump.fun">original</a>
-            <p>
-                NOVA JUMP es ocio, deporte y diversión para toda la familia con más de 1200 m2 de camas elásticas y
-                juegos. Ven a pasar un rato divertido con tu...
-            </p>
-            <sub>919 60 44 46</sub>
-        </div>
+                <nav>
+                    <!-- Menu Principal-->
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Tiendas" href="tiendas.html">Tiendas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Restauracion" href="restaurante.html">Restauración</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Ocio" href="ocio.html">Ocio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Newsletter" href="https://elventanaldelasierra.es/newsletter"
+                                >Newsletter</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Cine" href="cine.html">Cine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Blog" href="https://elventanaldelasierra.es/blog/">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
 
-        <div>
-            <img src="images/centro-comercial-18.jpg" />
-            <h3>PAUSE AND PLAY</h3>
-            <a href="https://pauseandplay.es/index.php">original</a>
-            <p>
-                Transpórtate a los históricos hipódromos y canódromos británicos. ¡Disfruta cada 5 minutos de una nueva
-                carrera! Este local situado en el Centro...
-            </p>
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/2g4u53s1Q4E?si=rt3z3BM9m51UM1pN"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen></iframe>
-            <sub>607 014 871</sub>
-        </div>
+                <div>
+                    <a href="https://www.facebook.com/elventanaldelasierra" target="_blank"
+                        ><i class="bi bi-facebook fs-4 me-2"></i
+                    ></a>
+                    <a href="https://www.youtube.com/user/elventanaldelasierra" target="_blank"
+                        ><i class="bi bi-youtube fs-4 me-2"></i
+                    ></a>
+                    <a href="https://www.instagram.com/elventanaldelasierracc/" target="_blank"
+                        ><i class="bi bi-instagram fs-4"></i
+                    ></a>
+                </div>
+            </div>
+        </header>
 
-        <div>
-            <img src="images/centro-comercial-19.jpg" />
-            <h3>FUN ZONE</h3>
-            <p>Área de arcade para todas las edades.</p>
-            <sub>600 123 456</sub>
-        </div>
+        <article class="container-fluid px-1 md-2" style="position: relative">
+            <!--my-*: Margen vertical (top y bottom) que varía según el tamaño de pantalla:
+               mx-*: Margen horizontal:-->
+            <div class="row my-3 mx-0">
+                <!--col-sm-12: ocupa todo el ancho en pantallas pequeñas
+                   col-md-6: ocupa la mitad en pantallas medianas
+                   col-lg-4: ocupa 1/3 en pantallas grandes
+                   mb-5: margen inferior grande, para separar verticalmente-->
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                    <h5>Ocio</h5>
+                    <h2>Todas las categorías</h2>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5"></div>
+            </div>
+
+            <div class="row my-3 mx-0">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                   <!--Empieza la tarjeta visual del local.-->
+                    <div class="localbox">
+                        <img src="images/centro-comercial-17.jpg" />
+                        <p class="localName">NOVA JUMP</p>
+                        <sub
+                            >NOVA JUMP es ocio, deporte y diversión para toda la familia con más de 1200 m2 de camas
+                            elásticas y juegos. Ven a pasar un rato divertido con tu...</sub
+                        >
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aviso1">
+                            Más información
+                        </button>
+                        <!-- The Modal -->
+                        <div class="modal" id="aviso1">
+                        
+                          <!--Se activa cuando el usuario hace clic en el botón anterior.
+                           modal-xl: tamaño extra grande.-->   
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <a href="https://elventanaldelasierra.es/local/nova-jump"
+                                            ><h4 class="modal-title">NOVA JUMP</h4></a>
+                                            <!--Botón para cerrar el modal.-->
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <p class="mt-1 localInfo">
+                                            NOVA JUMP es ocio, deporte y diversión para toda la familia con más de 1200
+                                            m2 de camas elásticas y juegos.
+                                        </p>
+
+                                        <p class="mt-1 localInfo">
+                                            Ven a pasar un rato divertido con tu familia, tus amigos, o celebra el
+                                            cumpleaños que siempre has soñado. Nuestro personal especializado estará
+                                            encantado de recibirte.
+                                        </p>
+
+                                        <p class="mt-1 localInfo">
+                                            No te pierdas nuestro JUMPING DAY todos los miércoles al mejor precio.
+                                        </p>
+
+                                        <div class="localPhone">
+                                            <a href="tel:919 60 44 46">919 60 44 46</a>
+                                        </div>
+                                        <div class="ratio ratio-16x9">
+                                            <iframe
+                                                width="560"
+                                                height="315"
+                                                src="https://www.youtube.com/embed/BK14UFgbDSM?si=caNB2u_DQgE7gYPy"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                           <!--Botón rojo para cerrar el modal.-->
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                                Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                    <div class="localbox">
+                        <img src="images/centro-comercial-18.jpg" />
+                        <p class="localName">PAUSE AND PLAY</p>
+                        <sub
+                            >Transpórtate a los históricos hipódromos y canódromos británicos. ¡Disfruta cada 5 minutos
+                            de una nueva carrera! Este local situado en el Centro...</sub
+                        >
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aviso2">
+                            Más información
+                        </button>
+                        <!-- The Modal -->
+                        <div class="modal" id="aviso2">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <a href="https://elventanaldelasierra.es/local/pause-and-play"
+                                            ><h4 class="modal-title">PAUSE AND PLAY</h4> </a
+                                        ><button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <p class="mt-1 localInfo">
+                                            Transpórtate a los históricos hipódromos y canódromos británicos. ¡Disfruta
+                                            cada 5 minutos de una nueva carrera!
+                                        </p>
+
+                                        <p class="mt-1 localInfo">
+                                            Este local situado en el Centro Comercial El Ventanal, ofrece la más diversa
+                                            oferta de ocio, salón de juegos, sportsbar,... ¡Un lugar para todos los
+                                            gustos!
+                                        </p>
+
+                                        <div class="localPhone">
+                                            <a href="tel:607 014 871">607 014 871</a>
+                                        </div>
+                                        <div class="ratio ratio-16x9">
+                                            <iframe
+                                                width="560"
+                                                height="315"
+                                                src="https://www.youtube.com/embed/ryA599u_eJI?si=-3ZObMxHKK9TjE-H"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-5">
+                    <div class="localbox">
+                        <img src="images/centro-comercial-18.jpg" />
+                        <p class="localName">ARCADE ZONE</p>
+                        <sub
+                            >Vive la experiencia retro y moderna en ARCADIA ZONE: simuladores, juegos de carreras,
+                            pinballs y clásicos arcade para todas las edades...</sub
+                        >
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aviso3">
+                            Más información
+                        </button>
+                        <!-- The Modal -->
+                        <div class="modal" id="aviso3">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">ARCADE ZONE</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <p class="mt-1 localInfo">
+                                            Sumérgete en un universo donde lo retro y lo moderno se encuentran:
+                                            simuladores de última generación, juegos de carreras, pinballs y las
+                                            legendarias máquinas arcade que marcaron época… ¡todo en un solo lugar! Ven
+                                            con tus amigos, en familia o celebra el cumpleaños que siempre imaginaste.
+                                        </p>
+
+                                        <p class="mt-1 localInfo">
+                                            Contamos con espacios adaptados para todas las edades y un equipo
+                                            profesional que hará de tu visita una experiencia inolvidable. No te pierdas
+                                            nuestras promociones semanales y torneos temáticos.
+                                        </p>
+
+                                        <p class="mt-1 localInfo">
+                                            Revive la emoción de los salones recreativos de los 80 y 90 o descubre lo
+                                            último en tecnología de entretenimiento digital. Ubicado en el Centro
+                                            Comercial El Ventanal, ARCADE ZONE combina la mejor oferta de ocio, un
+                                            completo salón de juegos, zona de simuladores, y un ambiente perfecto para
+                                            desconectar y pasarlo bien. ¡ARCADE ZONE, donde el juego nunca termina!
+                                        </p>
+
+                                        <div class="localPhone">
+                                            <a href="tel:911 223 344">911 223 344</a>
+                                        </div>
+                                        <div class="ratio ratio-16x9">
+                                            <iframe
+                                                width="560"
+                                                height="315"
+                                                src="https://www.youtube.com/embed/b8zo_6tfAs4?si=usLI-y_ovu_wuWCH"
+                                                title="YouTube video player"
+                                                frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer class="container-fluid bg-dark text-white">
+            <!--márgenes (m) y padding (p) horizontales (x) con valores diferentes según el tamaño de pantalla 
+               pt-5: Padding arriba, para separar del contenido anterior.-->
+            <div class="row mx-1 px-1">
+                <div class="col-md-3">
+                    <p>
+                        Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
+                        proporcionarles emociones.
+                    </p>
+                    <a href="https://www.nhood.es/" target="_blank"><img src="images/logo-centro-comercial-2.png" /></a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Horarios</h5>
+                    <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p>
+                        <a href="contacto.html" class="text-white">Escríbenos</a><br /><a
+                            href="tel:918473685"
+                            class="text-white"
+                            >91 847 36 85</a
+                        >
+                        <a class="color_foot_txt" href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank"
+                            >Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</a
+                        >
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <!--Iconos de redes sociales usando Icons (bi bi-*).
+                       me-2: Añade margen a la derecha entre iconos.-->
+                    <a href="https://www.facebook.com/elventanaldelasierra"
+                        ><i class="bi bi-facebook me-2 text-white"></i
+                    ></a>
+                    <a href="https://www.youtube.com/user/elventanaldelasierra"
+                        ><i class="bi bi-youtube me-2 text-white"></i
+                    ></a>
+                    <a href="https://www.instagram.com/elventanaldelasierracc/"
+                        ><i class="bi bi-instagram text-white"></i
+                    ></a>
+                </div>
+            </div>
+            <!--mt-5: Margen superior para separarse de la fila anterior.-->
+            <div class="row smx-1 px-1">
+                <div class="col">
+                    <p>
+                        © El Ventanal de la Sierra 2025 -
+                        <a class="cBody" href="aviso_legal.html">Aviso legal</a>-
+                        <a class="cBody" href="https://elventanaldelasierra.es/politica-privacidad"
+                            >Política de privacidad</a
+                        >-
+                        <a class="cBody" href="https://elventanaldelasierra.es/politica-cookies">Política de Cookies</a
+                        >-
+                        <a href="#">Gestionar preferencias de Cookies</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

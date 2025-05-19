@@ -1,115 +1,453 @@
 <!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>El ventanal de la sierra</title>
-</head>
-<body>
-    <!-- Carrusel de imágenes (manual con varias imágenes) -->
-    <div>
-        <img src="images/centro-comercial-1.jpg" />
-        <img src="images/centro-comercial-2.jpg" />
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>El Ventanal de la Sierra</title>
 
-    <!-- Logos de tiendas -->
-    <div>
-        <img src="images/logo-centro-comercial-1.jpg" />
-        <img src="images/logo-centro-comercial-2.jpg" />
-        <img src="images/logo-centro-comercial-3.jpg" />
-        <img src="images/logo-centro-comercial-4.jpg" />
-        <img src="images/logo-centro-comercial-5.jpg" />
-        <img src="images/logo-centro-comercial-6.jpg" />
-        <img src="images/logo-centro-comercial-7.jpg" />
-        <img src="images/logo-centro-comercial-8.jpg" />
-    </div>
+        <!-- Bootstrap 5 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-    <!-- Servicios -->
-    <div>
-        <h2>Servicios</h2>
-        <h3>Mucho más que ir de tiendas</h3>
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway:wght@400;700&display=swap"
+            rel="stylesheet" />
 
-        <img src="images/centro-comercial-3.jpg" />
-        <h4>PARKING GRATUITO</h4>
-        <p>Dispones de espacio gratuito para aparcar tu coche.</p>
+        <!-- CSS Personalizado -->
+    </head>
 
-        <img src="images/centro-comercial-4.jpg" />
-        <h4>PUNTO DE CARGA USB</h4>
-        <p>Conexiones USB para móvil, tablet o portátil.</p>
+    <body>
+        <!-- Es un contenedor de ancho completo, con fondo oscuro y un poco de espacio arriba y abajo.-->
+        <header class="container-fluid bg-dark py-3">
+            <!-- fila flexible (d-flex), con espaciado entre elementos y alineación vertical centrada.-->
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="portada.html"><img src="images/logo-centro-comercial.png" alt="Logo" /></a>
+                <!-- ul class="nav": Crea una lista horizontal de elementos de navegación.
+            	li class="nav-item": Cada elemento del menú.
+            	a class="nav-link: Un enlace dentro del menú y se ve con estilo de enlace de navegación.-->
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://elventanaldelasierra.es/horario">Horarios</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="tiendas.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="visitanos.html">Cómo llegar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://elventanaldelasierra.es/alquiler-espacios"
+                                >Alquiler de espacio</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <div>
+                    <a href="https://www.facebook.com/elventanaldelasierra" target="_blank"
+                        ><i class="bi bi-facebook fs-4 me-2"></i
+                    ></a>
+                    <a href="https://www.youtube.com/user/elventanaldelasierra" target="_blank"
+                        ><i class="bi bi-youtube fs-4 me-2"></i
+                    ></a>
+                    <a href="https://www.instagram.com/elventanaldelasierracc/" target="_blank"
+                        ><i class="bi bi-instagram fs-4"></i
+                    ></a>
+                </div>
+            </div>
+        </header>
 
-        <img src="images/centro-comercial-5.jpg" />
-        <h4>WIFI GRATUITO</h4>
-        <p>Red wifi disponible en todo el centro.</p>
+        <!--container: Clase de Bootstrap que centra el contenido y le da márgenes laterales.
+    	mt-4: Clase de Bootstrap que añade margen superior (mt = margin-top, 4 = tamaño).-->
+        <article class="container mt-4">
+            <!-- Carrusel -->
+            <section id="carrusel">
+                <!--Carrusel 1-->
 
-        <img src="images/centro-comercial-6.jpg" />
-        <h4>AMAZON LOCKER</h4>
-        <p>Recoge tus pedidos en nuestro Amazon Locker.</p>
+                <!--slide: activa la animación de deslizar entre imágenes.-->
+                <div id="carouselImagnes" class="carousel slide mb-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/centro-comercial-1.jpg" class="d-block w-100" alt="Imagen 1" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/centro-comercial-2.jpg" class="d-block w-100" alt="Imagen 2" />
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselImagnes"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselImagnes"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
 
-        <img src="images/centro-comercial-7.jpg" />
-        <h4>ÁREAS DE DESCANSO</h4>
-        <p>Espacios cómodos para descansar.</p>
+                <!--Carrusel 2-->
+                <div id="carouselLogos" class="carousel slide mb-5" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                                src="images/logo-centro-comercial-1.jpg"
+                                class="d-block w-100"
+                                alt="Imagen 3"
+                                style="width=126 height=126;" />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/logo-centro-comercial-2.jpg"
+                                class="d-block w-100"
+                                alt="Imagen 4"
+                                style="width=126 height=126;" />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/logo-centro-comercial-3.jpg"
+                                class="d-block w-100"
+                                alt="Imagen 5"
+                                style="width=126 height=126;" />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/logo-centro-comercial-4.jpg"
+                                class="d-block w-100"
+                                alt="Imagen 6"
+                                style="width=126 height=126;" />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/logo-centro-comercial-5.jpg"
+                                class="d-block w-100"
+                                alt="Imagen 7"
+                                style="width=126 height=126;" />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/logo-centro-comercial-6.jpg"
+                                class="d-block w-100"
+                                alt="Imagen 8"
+                                style="width=126 height=126;" />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/logo-centro-comercial-7.jpg"
+                                class="d-block w-100"
+                                alt="Imagen 9"
+                                style="width=126 height=126;" />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/logo-centro-comercial-8.jpg"
+                                class="d-block w-100"
+                                alt="Imagen 10"
+                                style="width=126 height=126;" />
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselLogos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselLogos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </section>
 
-        <img src="images/centro-comercial-8.jpg" />
-        <h4>ASEOS ADAPTADOS</h4>
-        <p>Aseos accesibles para todos.</p>
+            <!-- Video -->
+            <!--aplica un margen inferior grande al elemento, para que haya espacio por debajo de él.-->
+            <section id="fiesta" class="mb-5 text-center">
+                <h2>Fiesta del Día</h2>
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/BDQi_uXIyfg"
+                    title="Video Fiesta"
+                    frameborder="0"
+                    allowfullscreen></iframe>
+            </section>
 
-        <img src="images/centro-comercial-9.jpg" />
-        <h4>CAJEROS AUTOMÁTICOS</h4>
-        <p>Dispón de efectivo fácilmente.</p>
+            <!-- Servicios -->
+            <section id="servicios" class="mb-5">
+                <h2>Servicios</h2>
 
-        <img src="images/centro-comercial-10.jpg" />
-        <h4>COLUMNA CARDIO PROTECCIÓN</h4>
-        <p>Desfibriladores distribuidos por el centro.</p>
+                <!--row-cols-1: En pantallas pequeñas, la fila tendrá 1 columna por fila.
+            	row-cols-md-3: En pantallas medianas tendrá 3 columnas por fila.
+            	g-4: Aplica un espaciado entre columnas y filas del tamaño 4.-->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!--col: Cada div con esta clase es una columna dentro de la fila.-->
+                    <div class="col">
+                        <!--card: Aplica el estilo de tarjeta de Bootstrap: caja con borde, sombra, etc.
+                    	h-100: Hace que la tarjeta tenga una altura del 100% del contenedor -->
+                        <div class="card h-100">
+                            <img src="images/centro-comercial-3.jpg" class="card-img-top" alt="Parking" />
+                            <div class="card-body">
+                                <h5 class="card-title">Parking Gratuito</h5>
+                                <p class="card-text">
+                                    Dispones de espacio gratuito para aparcar tu coche y poder acceder cómodamente al
+                                    centro.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-        <img src="images/centro-comercial-11.jpg" />
-        <h4>DOG FRIENDLY</h4>
-        <p>Se admiten perros en zonas comunes.</p>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/centro-comercial-4.jpg" class="card-img-top" alt="Parking" />
+                            <div class="card-body">
+                                <h5 class="card-title">Parking subterráneo</h5>
+                                <p class="card-text">
+                                    Aparca tu coche y accede al centro sin preocupación del tiempo que haga.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-        <img src="images/centro-comercial-12.jpg" />
-        <h4>GASOLINERA</h4>
-        <p>Llena tu depósito durante tu visita.</p>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/centro-comercial-5.jpg" class="card-img-top" alt="Parking" />
+                            <div class="card-body">
+                                <h5 class="card-title">Punto de carga dispositivos electrónicos USB</h5>
+                                <p class="card-text">
+                                    Tienes conexiones USB disponibles para tu móvil, tablet o portátil.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-        <img src="images/centro-comercial-13.jpg" />
-        <h4>LAVADO DE COCHES</h4>
-        <p>Lavadero especializado en el parking.</p>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/centro-comercial-6.jpg" class="card-img-top" alt="Parking" />
+                            <div class="card-body">
+                                <h5 class="card-title">Amazon Locker</h5>
+                                <p class="card-text">
+                                    Haz tu pedido en Amazon y recógelo aquí durante nuestro horario comercial.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-        <p>CONOCE TODOS LOS SERVICIOS</p>
-    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/centro-comercial-7.jpg" class="card-img-top" alt="Parking" />
+                            <div class="card-body">
+                                <h5 class="card-title">Áreas de descanso</h5>
+                                <p class="card-text">Disponibles en el centro para que puedas descansar cómodamente.</p>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Noticias -->
-    <div>
-        <h2>Noticias en El Ventanal de la Sierra</h2>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/centro-comercial-8.jpg" class="card-img-top" alt="Parking" />
+                            <div class="card-body">
+                                <h5 class="card-title">Aseos para personas con discapacidad</h5>
+                                <p class="card-text">Aseos accesibles para todos los públicos.</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <img src="images/centro-comercial-14.jpg" />
-        <sub>08-04-2025</sub>
-        <h3>Remedios naturales para alergias</h3>
-        <p>Descubre cómo aliviar los síntomas de forma natural...</p>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/centro-comercial-9.jpg" class="card-img-top" alt="Parking" />
+                            <div class="card-body">
+                                <h5 class="card-title">Cajeros automáticos</h5>
+                                <p class="card-text">Podrás disponer de dinero en efectivo en cualquier momento.</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <img src="images/centro-comercial-15.jpg" />
-        <sub>07-03-2025</sub>
-        <h3>Cómo celebrar un cumpleaños inolvidable</h3>
-        <p>Ideas para un cumpleaños infantil perfecto...</p>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/centro-comercial-10.jpg" class="card-img-top" alt="Parking" />
+                            <div class="card-body">
+                                <h5 class="card-title">Columna Cardio Protección</h5>
+                                <p class="card-text">Instalados por todo el Centro Comercial en caso de urgencia.</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <img src="images/centro-comercial-16.jpg" />
-        <sub>13-02-2025</sub>
-        <h3>Historia de los Manolitos</h3>
-        <p>El dulce ideal para San Valentín...</p>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/centro-comercial-11.jpg" class="card-img-top" alt="Parking" />
+                            <div class="card-body">
+                                <h5 class="card-title">Parking Gratuito</h5>
+                                <p class="card-text">Espacio gratuito para aparcar tu coche.</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <p>Ver todas las noticias</p>
-    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/centro-comercial-12.jpg" class="card-img-top" alt="Parking" />
+                            <div class="card-body">
+                                <h5 class="card-title">Dog Friendly</h5>
+                                <p class="card-text">
+                                    Somos DogFriendly en nuestras zonas comunes. Dentro de cada establecimiento, este se
+                                    reserva el derecho de acceso.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Fiesta del día -->
-    <div>
-        <h2>Fiesta del día</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BDQi_uXIyfg?si=7fyK53gem4Nr4cdL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/centro-comercial-13.jpg" class="card-img-top" alt="Parking" />
+                            <div class="card-body">
+                                <h5 class="card-title">Lavado de coches</h5>
+                                <p class="card-text">
+                                    ¡Nos gusta ser brillantes! ¿Quieres presumir de coche reluciente? En nuestro parking
+                                    subterráneo encontrarás un lavadero de coches especializado, con el que te
+                                    garantizamos los mejores resultados.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Newsletter -->
-    <div>
-        <h2>SIEMPRE ON</h2>
-        <h3>Suscríbete a nuestra newsletter</h3>
-        <p>Mantente informado de eventos, promociones y noticias. ¡Únete a nuestra comunidad!</p>
-        <p>Suscribirse</p>
-    </div>
-</body>
+                    <div class="col">
+                        <a href="https://elventanaldelasierra.es/servicios">CONOCE TODOS LOS SERVIVIOS</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Noticias -->
+            <section id="noticias" class="mb-5" style="position: relative">
+                <h2 style="text-align: center">Noticias en El Ventanal de la Sierra</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/centro-comercial-14.jpg" class="img-fluid" alt="Noticia 1" />
+                        <small>08-04-2025</small>
+                        <h4>
+                            <a
+                                href="https://elventanaldelasierra.es/blog/remedios-naturales-para-alergias-y-como-aliviarlas/"
+                                >Remedios naturales para alergias</a
+                            >
+                        </h4>
+                        <p>
+                            Descubre los remedios naturales para alergias que más te pueden ayudar a aliviar los
+                            síntomas. Cuida tu cuerpo esta primavera de manera natural...
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="images/centro-comercial-15.jpg" class="img-fluid" alt="Noticia 1" />
+                        <small>07-03-2025</small>
+                        <h4>
+                            <a
+                                href="https://elventanaldelasierra.es/blog/como-celebrar-un-cumpleanos-para-que-sea-inolvidable/"
+                                >Cómo celebrar un cumpleaños para que sea inolvidable</a
+                            >
+                        </h4>
+                        <p>
+                            Tus hijos se merecen lo mejor, sobre todo en su día especial. Por eso, te contamos cómo
+                            celebrar un cumpleaños infantil para que sea inolvidable....
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="images/centro-comercial-16.jpg" class="img-fluid" alt="Noticia 1" />
+                        <small>06-05-2025</small>
+                        <h4>
+                            <a href="https://elventanaldelasierra.es/blog/6-ideas-para-decorar-el-jardin-en-verano/"
+                                >6 ideas para decorar el jardín en verano</a
+                            >
+                        </h4>
+                        <p>
+                            Anota estas 6 ideas para decorar el jardín en verano y disfruta del aire libre ahora que se
+                            acerca el buen tiempo. Todo lo que debes saber ...
+                        </p>
+                    </div>
+
+                    <div class="col-sm-12 text-center">
+                        <a class="botom_v3 mt-3" href="https://elventanaldelasierra.es/blog/" target="_blank"
+                            >Ver todas las noticias</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter -->
+            <section id="newsletter" class="text-center mb-5">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 text-center">
+                        <h4>Siempre ON</h4>
+                        <h2>Suscríbete a nuestra newsletter</h2>
+                        <p>
+                            Mantente al tanto de las últimas novedades y promociones con nuestra newsletter. Al unirte,
+                            recibirás información exclusiva sobre eventos, ofertas y mucho más. ¡No te pierdas ninguna
+                            de nuestras sorpresas y únete hoy mismo! Haz click en el enlace de suscripción y comienza a
+                            disfrutar de las ventajas de ser parte de nuestra comunidad.
+                        </p>
+
+                        <a href="https://elventanaldelasierra.es/newsletter" class="btn btn-primary">Suscribirse</a>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </section>
+        </article>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <div class="col-md-3">
+                        <p> Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y proporcionarles emociones. </p>
+                        <a href="https://www.nhood.es/ target=_blank"><img src="images/logo-centro-comercial2-.png"></a>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Horarios</h5>
+                        <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Contacto</h5>
+                        <p>
+                            <a href="contacto.html" class="text-white">Escríbenos</a><br /><a
+                                href="tel:918473685"
+                                class="text-white"
+                                >91 847 36 85</a
+                            >
+                            <a class="color_foot_txt" href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank">Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://www.facebook.com/elventanaldelasierra"
+                            ><i class="bi bi-facebook me-2 text-white"></i
+                        ></a>
+                        <a href="https://www.youtube.com/user/elventanaldelasierra"
+                            ><i class="bi bi-youtube me-2 text-white"></i
+                        ></a>
+                        <a href="https://www.instagram.com/elventanaldelasierracc/"
+                            ><i class="bi bi-instagram text-white"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="row">
+                   <div class="col">
+                    <p>
+                    © El Ventanal de la Sierra 2025 -
+                    <a class="cBody" href="aviso_legal.html">Aviso legal</a>-
+                    <a class="cBody" href="https://elventanaldelasierra.es/politica-privacidad">Política de privacidad</a>-
+                    <a class="cBody" href="https://elventanaldelasierra.es/politica-cookies">Política de Cookies</a>-
+                    <a href="#">Gestionar preferencias de Cookies</a>
+                    </p>
+                </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

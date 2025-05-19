@@ -1,78 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiendas</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Tiendas</title>
 
-    <header>
-        <h1>Tiendas</h1>
-    </header>
-    
-    <article>
-        <img src="images/alcampo.jpg" width="600px">
-        <h3>Alcampo</h3>
-        <p>
-            Si quieres hacer tu compra con los mejores productos mientras ahorras, la única solución para ti es venir a comprar al hipermercado Alcampo.
-            En el centro comercial El Ventanal de la Sierra encontrarás la mayor variedad en todos tus <strong>productos de alimentación</strong>,
-            para el <strong>hogar</strong> y productos <strong>textiles</strong>, para que cada compra que realices con nosotros tenga <strong>calidad asegurada</strong>.
-            No te lo pienses más y visita nuestro centro comercial para realizar todas tus compras con nosotros,¡no te arrepentirás!
-        </p>
+        <!-- Bootstrap 5 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-        <img src="images/belros.jpg" width="600px">
-        <h3>Belros</h3>
-        <p>
-            Tu tienda de golosinas donde encontrás las últimas tendencias en caramelos, snacks, encurtidos y golosinas se llama Belros.
-        </p>
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway:wght@400;700&display=swap"
+            rel="stylesheet" />
 
-        <img src="images/carglass.jpg" width="600px">
-        <h3>Carglass</h3>
-        <p>
-            Cuidar de tu coche es una tarea que, en algunas ocasiones, puede resultar complicada.
-            Por eso, desde <strong>El Ventanal de la Sierra</strong> te recomendamos que lo dejes en mano de los mejores expertos.
-            En Carglass en Colmenar Viejo, están a tu disposición los <strong>mejores profesionales</strong>, empleando las <strong>últimas tecnologías</strong>,
-            para darle a tu coche el trato que se merece.
-            Si tienes cualquier problema con la cristalería de tu coche, confía en Carglass.
-        </p>
+        <!-- CSS -->
+    </head>
 
-        <img src="images/decimas.jpg" width="600px">
-        <h3>Décimas</h3>
-        <p>
-            DECIMAS es una empresa de moda deportiva con más de 350 puntos de venta en España y otros países europeos.
-            DECIMAS se inspira en las tendencias internacionales para diseñar colecciones para las principales disciplinas deportivas,
-            las adapta con su estilo propio garantizando siempre la mejor relación calidad-precio.
-            Además complementa su oferta con la mejor selección de producto de las principales marcas del sector como Adidas, Nike, New Balance, Asics, entre otras.
-        </p>
+    <body>
+        <!--contenedor de ancho completo. Fondo oscuro. Espacio arriba y abajo.-->
+        <header class="container-fluid bg-dark py-3">
+            <!-- fila flexible (d-flex), espaciado entre elementos, alineación vertical centrada.-->
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="index.html"><img src="images/logo-centro-comercial.png" alt="Logo" /></a>
+                <!-- ul class="nav": Crea una lista de elementos de navegación.
+                                            	li class="nav-item": Cada elemento del menú.
+                                            	a class="nav-link: Un enlace dentro del menú-->
+                <nav>
+                    <ul class="nav">
+                        <!-- menu secundario-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://elventanaldelasierra.es/horario">Horarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Servicios" href="https://elventanaldelasierra.es/servicios"
+                                >Servicios</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Visitar" href="visitanos.html">Cómo llegar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Contacto" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://elventanaldelasierra.es/alquiler-espacios"
+                                >Alquiler de espacio</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
 
-        <img src="images/game.jpg" width="600px">
-        <h3>Game</h3>
-        <p>
-            Compra ediciones especiales exclusivas en Videojuegos, PlayStation, XBOX, Wii y Digital.
-        </p>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Tiendas" href="tiendas.html">Tiendas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Restauracion" href="restaurante.html">Restauración</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Ocio" href="ocio.html">Ocio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Newsletter" href="https://elventanaldelasierra.es/newsletter"
+                                >Newsletter</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Cine" href="cine.html">Cine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" alt="Blog" href="https://elventanaldelasierra.es/blog/">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
 
-        <img src="images/h&m.jpg" width="600px">
-        <h3>H&M</h3>
-        <p>
-            H&M es una de las marcas de moda líderes de España, con ropa para todo el mundo, desde los más pequeños de la casa hasta los más mayores,
-            pero también con ropa para todos los momentos del año y del día. Es por eso que en sus tiendas puedes encontrar desde la ropa más formal,
-            hasta los pijamas más cómodos. Porque queremos que puedas disfrutar de su calidad y buen precio sin problemas,
-            en El Ventanal de la Sierra encontrarás el mejor H&M de Colmenar Viejo.
-            Ven tú mismo a comprobarlo y no te arrepentirás.
-        </p>
+                <div>
+                    <a href="https://www.facebook.com/elventanaldelasierra" target="_blank"
+                        ><i class="bi bi-facebook fs-4 me-2"></i
+                    ></a>
+                    <a href="https://www.youtube.com/user/elventanaldelasierra" target="_blank"
+                        ><i class="bi bi-youtube fs-4 me-2"></i
+                    ></a>
+                    <a href="https://www.instagram.com/elventanaldelasierracc/" target="_blank"
+                        ><i class="bi bi-instagram fs-4"></i
+                    ></a>
+                </div>
+            </div>
+        </header>
 
-        <img src="images/springfield.jpg" width="600px">
-        <h3>Springfield</h3>
-        <p>
-            Con una gran presencia desde <strong>2006</strong>, Springfield lleva años liderando el sector textil,
-            ofreciendo prendas de calidad y a la moda tanto para hombres como para mujeres.
-            Con un <strong>estilo muy definido</strong>, pero siguiendo las <strong>tendencias</strong> más predominantes, en las tiendas de Springfield de Madrid,
-            encontrarás siempre ropa con la <strong>máxima calidad</strong> del mercado.
-            Ven a visitar la tienda de Springfield en Colmenar Viejo y compra la moda que más te gusta, al mejor precio.
-        </p>
-    </article>
-    
-    
-</body>
+        <article>
+            <h1>Tiendas</h1>
+            <img src="images/alcampo.jpg" width="600px" />
+            <h3>Alcampo</h3>
+            <p>
+                Si quieres hacer tu compra con los mejores productos mientras ahorras, la única solución para ti es
+                venir a comprar al hipermercado Alcampo. En el centro comercial El Ventanal de la Sierra encontrarás la
+                mayor variedad en todos tus <strong>productos de alimentación</strong>, para el <strong>hogar</strong> y
+                productos <strong>textiles</strong>, para que cada compra que realices con nosotros tenga
+                <strong>calidad asegurada</strong>. No te lo pienses más y visita nuestro centro comercial para realizar
+                todas tus compras con nosotros,¡no te arrepentirás!
+            </p>
+
+            <img src="images/belros.jpg" width="600px" />
+            <h3>Belros</h3>
+            <p>
+                Tu tienda de golosinas donde encontrás las últimas tendencias en caramelos, snacks, encurtidos y
+                golosinas se llama Belros.
+            </p>
+
+            <img src="images/carglass.jpg" width="600px" />
+            <h3>Carglass</h3>
+            <p>
+                Cuidar de tu coche es una tarea que, en algunas ocasiones, puede resultar complicada. Por eso, desde
+                <strong>El Ventanal de la Sierra</strong> te recomendamos que lo dejes en mano de los mejores expertos.
+                En Carglass en Colmenar Viejo, están a tu disposición los <strong>mejores profesionales</strong>,
+                empleando las <strong>últimas tecnologías</strong>, para darle a tu coche el trato que se merece. Si
+                tienes cualquier problema con la cristalería de tu coche, confía en Carglass.
+            </p>
+
+            <img src="images/decimas.jpg" width="600px" />
+            <h3>Décimas</h3>
+            <p>
+                DECIMAS es una empresa de moda deportiva con más de 350 puntos de venta en España y otros países
+                europeos. DECIMAS se inspira en las tendencias internacionales para diseñar colecciones para las
+                principales disciplinas deportivas, las adapta con su estilo propio garantizando siempre la mejor
+                relación calidad-precio. Además complementa su oferta con la mejor selección de producto de las
+                principales marcas del sector como Adidas, Nike, New Balance, Asics, entre otras.
+            </p>
+
+            <img src="images/game.jpg" width="600px" />
+            <h3>Game</h3>
+            <p>Compra ediciones especiales exclusivas en Videojuegos, PlayStation, XBOX, Wii y Digital.</p>
+
+            <img src="images/h&m.jpg" width="600px" />
+            <h3>H&M</h3>
+            <p>
+                H&M es una de las marcas de moda líderes de España, con ropa para todo el mundo, desde los más pequeños
+                de la casa hasta los más mayores, pero también con ropa para todos los momentos del año y del día. Es
+                por eso que en sus tiendas puedes encontrar desde la ropa más formal, hasta los pijamas más cómodos.
+                Porque queremos que puedas disfrutar de su calidad y buen precio sin problemas, en El Ventanal de la
+                Sierra encontrarás el mejor H&M de Colmenar Viejo. Ven tú mismo a comprobarlo y no te arrepentirás.
+            </p>
+
+            <img src="images/springfield.jpg" width="600px" />
+            <h3>Springfield</h3>
+            <p>
+                Con una gran presencia desde <strong>2006</strong>, Springfield lleva años liderando el sector textil,
+                ofreciendo prendas de calidad y a la moda tanto para hombres como para mujeres. Con un
+                <strong>estilo muy definido</strong>, pero siguiendo las <strong>tendencias</strong> más predominantes,
+                en las tiendas de Springfield de Madrid, encontrarás siempre ropa con la
+                <strong>máxima calidad</strong> del mercado. Ven a visitar la tienda de Springfield en Colmenar Viejo y
+                compra la moda que más te gusta, al mejor precio.
+            </p>
+        </article>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <div class="col-md-3">
+                        <p>
+                            Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
+                            proporcionarles emociones.
+                        </p>
+                        <a href="https://www.nhood.es/ target=_blank"
+                            ><img src="images/logo-centro-comercial-2.png"
+                        /></a>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Horarios</h5>
+                        <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Contacto</h5>
+                        <p>
+                            <a href="contacto.html" class="text-white">Escríbenos</a><br /><a
+                                href="tel:918473685"
+                                class="text-white"
+                                >91 847 36 85</a
+                            >
+                            <a class="color_foot_txt" href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank"
+                                >Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</a
+                            >
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://www.facebook.com/elventanaldelasierra"
+                            ><i class="bi bi-facebook me-2 text-white"></i
+                        ></a>
+                        <a href="https://www.youtube.com/user/elventanaldelasierra"
+                            ><i class="bi bi-youtube me-2 text-white"></i
+                        ></a>
+                        <a href="https://www.instagram.com/elventanaldelasierracc/"
+                            ><i class="bi bi-instagram text-white"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            © El Ventanal de la Sierra 2025 -
+                            <a class="cBody" href="aviso_legal.html">Aviso legal</a>-
+                            <a class="cBody" href="https://elventanaldelasierra.es/politica-privacidad"
+                                >Política de privacidad</a
+                            >-
+                            <a class="cBody" href="https://elventanaldelasierra.es/politica-cookies"
+                                >Política de Cookies</a
+                            >-
+                            <a href="#">Gestionar preferencias de Cookies</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
