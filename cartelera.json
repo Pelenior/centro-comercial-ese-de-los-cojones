@@ -1,0 +1,72 @@
+[
+    {
+        "título": "Dune: Parte Dos",
+        "director": "Denis Villeneuve",
+        "actores": [
+            "Timothée Chalamet",
+            "Zendaya",
+            "Rebecca Ferguson",
+            "Austin Butler"
+        ],
+        "sinopsis": "Paul Atreides se une a los Fremen en su lucha contra la Casa Harkonnen mientras se enfrenta a su destino como el mesías del desierto.",
+        "imagen": "https://m.media-amazon.com/images/M/MV5BMGVmNzIyMDEtODIwOC00NmQ1LTkyZGItYmJjYjg5NzBkM2I1XkEyXkFqcGc@._V1_.jpg"
+    },
+    {
+        "título": "MI: Sentencia final",
+        "director": "Christopher McQuarrie",
+        "actores": [
+            "Tom Cruise",
+            "Ving Rhames",
+            "Hayley Atwell",
+            "Simon Pegg"
+        ],
+        "sinopsis": "Ethan Hunt y su equipo enfrentan su misión más peligrosa hasta la fecha, luchando contra una amenaza global que pone en juego el futuro del mundo.",
+        "imagen": "https://m.media-amazon.com/images/M/MV5BZGQ5NGEyYTItMjNiMi00Y2EwLTkzOWItMjc5YjJiMjMyNTI0XkEyXkFqcGc@._V1_.jpg"
+    },
+    {
+        "título": "El nuevo imperio",
+        "director": "Adam Wingard",
+        "actores": [
+            "Rebecca Hall",
+            "Brian Tyree Henry",
+            "Dan Stevens",
+            "Kaylee Hottle"
+        ],
+        "sinopsis": "La colisión entre dos titanes legendarios desvela una amenaza colosal que pone en peligro tanto a la Tierra como a su propio legado.",
+        "imagen": "https://m.media-amazon.com/images/M/MV5BOWVmMDI2MzEtMjkyNC00YzI5LTk2ZTItNjc2NjI4MGZhZjAxXkEyXkFqcGc@._V1_.jpg"
+    },
+    {
+        "título": "Minecraft",
+        "director": "Jared Hess",
+        "actores": [
+            "Jason Momoa",
+            "Jack Black",
+            "Emma Myers",
+            "Danielle Brooks"
+        ],
+        "sinopsis": "Cuatro inadaptados son transportados al mundo de Minecraft, donde deben enfrentarse a desafíos inesperados para salvar su mundo.",
+        "imagen": "https://m.media-amazon.com/images/M/MV5BMGJjMDZiNzYtOWNjNS00MmYwLTg4NjAtYTJmYjZmODBlMzYzXkEyXkFqcGc@._V1_.jpg"
+    },
+    {
+        "título": "Blancanieves",
+        "director": "Marc Webb",
+        "actores": [
+            "Rachel Zegler",
+            "Gal Gadot",
+            "Andrew Burnap"
+        ],
+        "sinopsis": "Una nueva versión en acción real del clásico de Disney, donde Blancanieves enfrenta a su malvada madrastra para reclamar su destino.",
+        "imagen": "https://m.media-amazon.com/images/M/MV5BODhhMjU4ZGItZjEzZC00MzM1LWEyMTEtMDhmOTNiN2Y3MDg5XkEyXkFqcGc@._V1_.jpg"
+    },
+    {
+        "título": "Superman",
+        "director": "James Gunn",
+        "actores": [
+            "David Corenswet",
+            "Rachel Brosnahan",
+            "Nicholas Hoult"
+        ],
+        "sinopsis": "Un reinicio del icónico superhéroe, explorando el viaje de Superman para reconciliar su herencia alienígena con su vida humana.",
+        "imagen": "https://m.media-amazon.com/images/M/MV5BMWFiZjUwZmEtMGVjYi00MjI0LTk5MzAtMjM0MjRkODcyNjI5XkEyXkFqcGc@._V1_.jpg"
+    }
+]
