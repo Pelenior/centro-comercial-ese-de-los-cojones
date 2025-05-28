@@ -1,70 +1,251 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Restauración</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="centroComercial.css" />
-    </head>
-    <body class="bg-dark text-white">
-        <article class="bg-white container my-4">
-            <h1 class="text-center mb-4 text-dark">RESTAURACIÓN</h1>
-            <section class="row">
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="h-100 border border-light rounded d-none d-md-block p-3 bg-white text-dark">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/local-3.jpg"
-                            class="img-fluid mb-2"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalMontaditos" />
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Restauración</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="centroComercial.css">
+</head>
+
+<body class="bg-black text-white">
+    <!--contenedor de ancho completo. Fondo oscuro. Espacio arriba y abajo.-->
+    <header class="container-fluid bg-dark py-3">
+        <!-- fila flexible (d-flex), espaciado entre elementos, alineación vertical centrada.-->
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="index.html"><img src="images/logo-centro-comercial.png" alt="Logo" /></a>
+            <!-- ul class="nav": Crea una lista de elementos de navegación.
+                                            	li class="nav-item": Cada elemento del menú.
+                                            	a class="nav-link: Un enlace dentro del menú-->
+            <nav>
+                <ul class="nav">
+                    <!-- menu secundario-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://elventanaldelasierra.es/horario">Horarios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" alt="Servicios"
+                            href="https://elventanaldelasierra.es/servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" alt="Visitar" href="visitanos.html">Cómo llegar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" alt="Contacto" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://elventanaldelasierra.es/alquiler-espacios">Alquiler de
+                            espacio</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" alt="Tiendas" href="tiendas.html">Tiendas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" alt="Restauracion" href="restaurante.html">Restauración</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" alt="Ocio" href="ocio.html">Ocio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" alt="Newsletter"
+                            href="https://elventanaldelasierra.es/newsletter">Newsletter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" alt="Cine" href="cine.html">Cine</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" alt="Blog" href="https://elventanaldelasierra.es/blog/">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div>
+                <a href="https://www.facebook.com/elventanaldelasierra" target="_blank"><i
+                        class="bi bi-facebook fs-4 me-2"></i></a>
+                <a href="https://www.youtube.com/user/elventanaldelasierra" target="_blank"><i
+                        class="bi bi-youtube fs-4 me-2"></i></a>
+                <a href="https://www.instagram.com/elventanaldelasierracc/" target="_blank"><i
+                        class="bi bi-instagram fs-4"></i></a>
+            </div>
+        </div>
+    </header>
+    <article class="bg-white container my-4">
+        <section class="row">
+            <!-- Versión para pantallas grandes y medianas -->
+            <!--100 Montaditos-->
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-none d-md-block">
+                <div class="h-100 border border-light rounded p-3 bg-white text-dark">
+                    <img src="images/100.png" class="img-fluid mb-2" data-bs-toggle="modal"
+                        data-bs-target="#modalMontaditos" />
+                </div>
+            </div>
+            <!--Foster-->
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-none d-md-block">
+                <div class="h-100 border border-light rounded p-3 bg-white text-dark">
+                    <img src="images/foster.png" class="img-fluid mb-2" data-bs-toggle="modal"
+                        data-bs-target="#modalFosters" />
+                </div>
+            </div>
+            <!--KFC-->
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-none d-md-block">
+                <div class="h-100 border border-light rounded p-3 bg-white text-dark">
+                    <img src="images/kfc.png" class="img-fluid mb-2" data-bs-toggle="modal"
+                        data-bs-target="#modalKFC" />
+                </div>
+            </div>
+            <!--Macdonalds-->
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-none d-md-block">
+                <div class="h-100 border border-light rounded p-3 bg-white text-dark">
+                    <img src="images/mac.png" class="img-fluid mb-2" data-bs-toggle="modal"
+                        data-bs-target="#modalMCDonalds" />
+                </div>
+            </div>
+            <!--VIPS-->
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-none d-md-block">
+                <div class="h-100 border border-light rounded p-3 bg-white text-dark">
+                    <img src="images/vips.png" class="img-fluid mb-2" data-bs-toggle="modal"
+                        data-bs-target="#modalVips" />
+                </div>
+            </div>
+            <!--Tagliatella-->
+            <div class="col-12 col-md-6 col-lg-4 mb-4 d-none d-md-block">
+                <div class="h-100 border border-light rounded p-3 bg-white text-dark">
+                    <img src="images/tag.png" class="img-fluid mb-2" data-bs-toggle="modal"
+                        data-bs-target="#modalTagliatella" />
+                </div>
+            </div>
+
+            <!-- Versión para pantallas pequeñas -->
+            <div class="col-12 mb-4 d-block d-md-none text-center">
+                <img src="images/100.png" class="img-fluid w-75 mx-auto mb-2" data-bs-toggle="modal"
+                    data-bs-target="#modalMontaditos" />
+            </div>
+            <div class="col-12 mb-4 d-block d-md-none text-center">
+                <img src="images/foster.png" class="img-fluid w-75 mx-auto mb-2" data-bs-toggle="modal"
+                    data-bs-target="#modalFosters" />
+            </div>
+            <div class="col-12 mb-4 d-block d-md-none text-center">
+                <img src="images/kfc.png" class="img-fluid w-75 mx-auto mb-2" data-bs-toggle="modal"
+                    data-bs-target="#modalKFC" />
+            </div>
+            <div class="col-12 mb-4 d-block d-md-none text-center">
+                <img src="images/mac.png" class="img-fluid w-75 mx-auto mb-2" data-bs-toggle="modal"
+                    data-bs-target="#modalMCDonalds" />
+            </div>
+            <div class="col-12 mb-4 d-block d-md-none text-center">
+                <img src="images/vips.png" class="img-fluid w-75 mx-auto mb-2" data-bs-toggle="modal"
+                    data-bs-target="#modalVips" />
+            </div>
+            <div class="col-12 mb-4 d-block d-md-none text-center">
+                <img src="images/tag.png" class="img-fluid w-75 mx-auto mb-2" data-bs-toggle="modal"
+                    data-bs-target="#modalTagliatella" />
+            </div>
+        </section>
+
+    </article>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3">
+                    <p>
+                        Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
+                        proporcionarles emociones.
+                    </p>
+                    <a href="https://www.nhood.es/ target=_blank"><img src="images/logo-centro-comercial-2.png" /></a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Horarios</h5>
+                    <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p>
+                        <a href="contacto.html" class="text-white">Escríbenos</a><br /><a href="tel:918473685"
+                            class="text-white">91 847 36 85</a>
+                        <a class="color_foot_txt" href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank">Avda.
+                            De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</a>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.facebook.com/elventanaldelasierra"><i
+                            class="bi bi-facebook me-2 text-white"></i></a>
+                    <a href="https://www.youtube.com/user/elventanaldelasierra"><i
+                            class="bi bi-youtube me-2 text-white"></i></a>
+                    <a href="https://www.instagram.com/elventanaldelasierracc/"><i
+                            class="bi bi-instagram text-white"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        © El Ventanal de la Sierra 2025 -
+                        <a class="cBody" href="aviso_legal.html">Aviso legal</a>-
+                        <a class="cBody" href="https://elventanaldelasierra.es/politica-privacidad">Política de
+                            privacidad</a>-
+                        <a class="cBody" href="https://elventanaldelasierra.es/politica-cookies">Política de
+                            Cookies</a>-
+                        <a href="#">Gestionar preferencias de Cookies</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Modales-->
+    <!--100 Montaditos-->
+    <div class="modal fade" id="modalMontaditos">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body d-flex flex-column flex-md-row p-0">
+                    <img src="https://elventanaldelasierra.es/img_v2/directorio/locales/local-3.jpg"
+                        class="img-fluid w-50" />
+                    <div class="p-4">
                         <h5>100 MONTADITOS</h5>
                         <p>
-                            100 Montaditos es una cadena española especializada en tapas y montaditos a precios bajos.
-                            Ambiente informal y accesible.
+                            100 Montaditos es una cadena española especializada en tapas y montaditos a precios
+                            bajos. Ambiente informal y accesible.
                         </p>
-                        <a href="https://spain.100montaditos.com/es" class="link-primary">original</a>
-                    </div>
-                    <div class="d-block d-md-none text-dark">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/local-3.jpg"
-                            class="img-fluid mb-2" />
-                        <h5>100 MONTADITOS</h5>
-                        <p class="small">Tapas y montaditos baratos en un entorno informal.</p>
-                        <a href="https://spain.100montaditos.com/es">original</a>
+                        <a href="https://spain.100montaditos.com/es">Original</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="h-100 border border-light rounded d-none d-md-block p-3 bg-white text-dark">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1197-2f676wwt.jpg"
-                            class="img-fluid mb-2"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalFosters" />
+            </div>
+        </div>
+    </div>
+    <!--Foster-->
+    <div class="modal fade" id="modalFosters">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body d-flex flex-column flex-md-row p-0">
+                    <img src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1197-2f676wwt.jpg"
+                        class="w-50" />
+                    <div class=" p-4">
                         <h5>FOSTERS HOLLYWOOD</h5>
                         <p>
-                            Restaurante de origen californiano con sabor americano auténtico. Innovación y calidad desde
+                            Restaurante de origen californiano con sabor americano auténtico. Innovación y calidad
+                            desde
                             los años 70.
                         </p>
                         <a href="https://www.fostershollywood.es" class="link-primary">original</a>
                     </div>
-                    <div class="d-block d-md-none text-dark">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1197-2f676wwt.jpg"
-                            class="img-fluid mb-2" />
-                        <h5>FOSTERS HOLLYWOOD</h5>
-                        <p class="small">Auténtico sabor americano desde los 70.</p>
-                        <a href="https://www.fostershollywood.es">original</a>
-                    </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="h-100 border border-light rounded d-none d-md-block p-3 bg-white text-dark">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1-1455.JPG"
-                            class="img-fluid mb-2"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalKFC" />
+            </div>
+        </div>
+    </div>
+    <!--KFC-->
+    <div class="modal fade" id="modalKFC">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body d-flex flex-column flex-md-row p-0">
+                    <img src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1-1455.JPG"
+                        class="w-50" />
+                    <div class="p-4">
                         <h5>KFC</h5>
                         <p>
                             Especialistas en pollo frito con su sabor crujiente único. Tradición y reconocimiento
@@ -72,22 +253,18 @@
                         </p>
                         <a href="https://www.kfc.es" class="link-primary">original</a>
                     </div>
-                    <div class="d-block d-md-none text-dark">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1-1455.JPG"
-                            class="img-fluid mb-2" />
-                        <h5>KFC</h5>
-                        <p class="small">Pollo crujiente y sabroso con tradición global.</p>
-                        <a href="https://www.kfc.es">original</a>
-                    </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="h-100 border border-light rounded d-none d-md-block p-3 bg-white text-dark">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1-596.jpg"
-                            class="img-fluid mb-2"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalMcDonalds" />
+            </div>
+        </div>
+    </div>
+    <!--Macdonalds-->
+    <div class="modal fade" id="modalMCDonalds">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body d-flex flex-column flex-md-row p-0">
+                    <img src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1-596.jpg"
+                        class="w-50" />
+                    <div class="p-4">
                         <h5>MCDONALD'S</h5>
                         <p>
                             Comida rápida con estándares de calidad y seguridad, ideal para toda la familia. Compromiso
@@ -95,22 +272,18 @@
                         </p>
                         <a href="https://mcdonalds.es" class="link-primary">original</a>
                     </div>
-                    <div class="d-block d-md-none text-dark">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1-596.jpg"
-                            class="img-fluid mb-2" />
-                        <h5>MCDONALD'S</h5>
-                        <p class="small">Comida rápida para todos con calidad garantizada.</p>
-                        <a href="https://mcdonalds.es">original</a>
-                    </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="h-100 border border-light rounded d-none d-md-block p-3 bg-white text-dark">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1-1477.jpg"
-                            class="img-fluid mb-2"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalVIPS" />
+            </div>
+        </div>
+    </div>
+    <!--VIPS-->
+    <div class="modal fade" id="modalVips">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body d-flex flex-column flex-md-row p-0">
+                    <img src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1-1477.jpg"
+                        class="w-50" />
+                    <div class="p-4">
                         <h5>VIPS</h5>
                         <p>
                             Disfruta de los clásicos de VIPS en un ambiente cómodo y familiar. Wifi gratuito y atención
@@ -118,22 +291,17 @@
                         </p>
                         <a href="#" class="link-primary">original</a>
                     </div>
-                    <div class="d-block d-md-none text-dark">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1-1477.jpg"
-                            class="img-fluid mb-2" />
-                        <h5>VIPS</h5>
-                        <p class="small">Clásicos de VIPS en un ambiente familiar y cómodo.</p>
-                        <a href="https://www.vips.es">original</a>
-                    </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="h-100 border border-light rounded d-none d-md-block p-3 bg-white text-dark">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1-1402.jpg"
-                            class="img-fluid mb-2"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalTagliatella" />
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalTagliatella">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body d-flex flex-column flex-md-row p-0">
+                    <img src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1-1402.jpg"
+                        class="w-50" />
+                    <div class="p-4">
                         <h5>LA TAGLIATELLA</h5>
                         <p>
                             Cocina italiana con ingredientes de calidad. Pizzas, pastas y postres artesanales para
@@ -141,193 +309,11 @@
                         </p>
                         <a href="https://www.latagliatella.es" class="link-primary">original</a>
                     </div>
-                    <div class="d-block d-md-none text-dark">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1-1402.jpg"
-                            class="img-fluid mb-2" />
-                        <h5>LA TAGLIATELLA</h5>
-                        <p class="small">Comida italiana de calidad en ambiente acogedor.</p>
-                        <a href="https://www.latagliatella.es">original</a>
-                    </div>
                 </div>
-            </section>
-        </article>
-<<<<<<< Updated upstream
+            </div>
+        </div>
+    </div>
 
-        <!-- Footer -->
-        <footer class="bg-dark text-white py-4">
-            <div class="container">
-                <div class="row text-center text-md-start">
-                    <div class="col-md-3">
-                        <p>
-                            Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
-                            proporcionarles emociones.
-                        </p>
-                        <a href="https://www.nhood.es/ target=_blank"
-                            ><img src="images/logo-centro-comercial-2.png"
-                        /></a>
-                    </div>
-                    <div class="col-md-3">
-                        <h5>Horarios</h5>
-                        <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h5>Contacto</h5>
-                        <p>
-                            <a href="contacto.html" class="text-white">Escríbenos</a><br /><a
-                                href="tel:918473685"
-                                class="text-white"
-                                >91 847 36 85</a
-                            >
-                            <a class="color_foot_txt" href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank"
-                                >Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</a
-                            >
-                        </p>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="https://www.facebook.com/elventanaldelasierra"
-                            ><i class="bi bi-facebook me-2 text-white"></i
-                        ></a>
-                        <a href="https://www.youtube.com/user/elventanaldelasierra"
-                            ><i class="bi bi-youtube me-2 text-white"></i
-                        ></a>
-                        <a href="https://www.instagram.com/elventanaldelasierracc/"
-                            ><i class="bi bi-instagram text-white"></i
-                        ></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p>
-                            © El Ventanal de la Sierra 2025 -
-                            <a class="cBody" href="aviso_legal.html">Aviso legal</a>-
-                            <a class="cBody" href="https://elventanaldelasierra.es/politica-privacidad"
-                                >Política de privacidad</a
-                            >-
-                            <a class="cBody" href="https://elventanaldelasierra.es/politica-cookies"
-                                >Política de Cookies</a
-                            >-
-                            <a href="#">Gestionar preferencias de Cookies</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-=======
-        <div class="modal fade" id="modalMontaditos">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body d-flex flex-column flex-md-row p-0">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/local-3.jpg"
-                            class="img-fluid w-100 w-md-50" />
-                        <div class="p-4">
-                            <h5>100 MONTADITOS</h5>
-                            <p>
-                                100 Montaditos es una cadena española especializada en tapas y montaditos a precios
-                                bajos. Ambiente informal y accesible.
-                            </p>
-                            <a href="https://spain.100montaditos.com/es">Original</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modalFosters">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body d-flex flex-column flex-md-row p-0">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1197-2f676wwt.jpg"
-                            class="w-50" />
-                        <div class="p-4">
-                            <h5>100 MONTADITOS</h5>
-                            <p>
-                                100 Montaditos es una cadena española especializada en tapas y montaditos a precios
-                                bajos. Ambiente informal y accesible.
-                            </p>
-                            <a href="https://spain.100montaditos.com/es">Original</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modalFosters">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body d-flex flex-column flex-md-row p-0">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1197-2f676wwt.jpg"
-                            class="w-50" />
-                        <div class="p-4">
-                            <h5>100 MONTADITOS</h5>
-                            <p>
-                                100 Montaditos es una cadena española especializada en tapas y montaditos a precios
-                                bajos. Ambiente informal y accesible.
-                            </p>
-                            <a href="https://spain.100montaditos.com/es">Original</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modalKFC">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body d-flex flex-column flex-md-row p-0">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1197-2f676wwt.jpg"
-                            class="w-50" />
-                        <div class="p-4">
-                            <h5>100 MONTADITOS</h5>
-                            <p>
-                                100 Montaditos es una cadena española especializada en tapas y montaditos a precios
-                                bajos. Ambiente informal y accesible.
-                            </p>
-                            <a href="https://spain.100montaditos.com/es">Original</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modalMCDonalds">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body d-flex flex-column flex-md-row p-0">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1197-2f676wwt.jpg"
-                            class="w-50" />
-                        <div class="p-4">
-                            <h5>100 MONTADITOS</h5>
-                            <p>
-                                100 Montaditos es una cadena española especializada en tapas y montaditos a precios
-                                bajos. Ambiente informal y accesible.
-                            </p>
-                            <a href="https://spain.100montaditos.com/es">Original</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modalVips">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body d-flex flex-column flex-md-row p-0">
-                        <img
-                            src="https://elventanaldelasierra.es/img_v2/directorio/locales/tienda-1197-2f676wwt.jpg"
-                            class="w-50" />
-                        <div class="p-4">
-                            <h5>100 MONTADITOS</h5>
-                            <p>
-                                100 Montaditos es una cadena española especializada en tapas y montaditos a precios
-                                bajos. Ambiente informal y accesible.
-                            </p>
-                            <a href="https://spain.100montaditos.com/es">Original</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
->>>>>>> Stashed changes
-    </body>
+</body>
+
 </html>
