@@ -336,61 +336,194 @@
         </article>
 
 
-        <!-- Footer -->
-        <footer class="bg-dark text-white py-4">
-            <div class="container">
-                <div class="row text-center text-md-start">
-                    <div class="col-md-3">
-                        <p>
-                            Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
-                            proporcionarles emociones.
-                        </p>
-                        <a href="https://www.nhood.es/ target=_blank"
-                            ><img src="images/logo-centro-comercial-2.png"
-                        /></a>
-                    </div>
-                    <div class="col-md-3">
-                        <h5>Horarios</h5>
-                        <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h5>Contacto</h5>
-                        <p>
-                            <a href="contacto.html" class="text-white">Escríbenos</a><br /><a
-                                href="tel:918473685"
-                                class="text-white"
-                                >91 847 36 85</a
-                            >
-                            <a class="color_foot_txt" href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank"
-                                >Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</a
-                            >
-                        </p>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="https://www.facebook.com/elventanaldelasierra"
-                            ><i class="bi bi-facebook me-2 text-white"></i
-                        ></a>
-                        <a href="https://www.youtube.com/user/elventanaldelasierra"
-                            ><i class="bi bi-youtube me-2 text-white"></i
-                        ></a>
-                        <a href="https://www.instagram.com/elventanaldelasierracc/"
-                            ><i class="bi bi-instagram text-white"></i
-                        ></a>
+                <!-- Footer -->
+        <footer class="container-fluid bg-dark text-white">
+            <!--fila con margen horizontal (x) mx-1 (pequeño) mx-md-2(medio) mx-lg-5 (grandes)
+         px-*: Padding horizontal (relleno interno): px-1: poco espacio en pantallas pequeñas. 
+        pt-5: Padding superior (espacio interno arriba) grande.-->
+            <div class="row mx-1 mx-md-2 px-1 px-md-2 px-lg-5 pt-5">
+                <!--col-lg-*: Columnas en pantallas grandes: col-lg-4: Ocupa 4 de 12 columnas, ect.-->
+                <div class="col-lg-4">
+                    <p>
+                        Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
+                        proporcionarles emociones.
+                    </p>
+                    <a href="https://www.nhood.es/" target="_blank">
+                        <img src="images/logo-centro-comercial-2.png" alt="Logo Nhood" />
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <h5><i class="bi bi-clock-fill"></i> Horarios</h5>
+                    <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5><i class="bi bi-telephone-fill"></i> Contacto</h5>
+                    <p>
+                        <a href="contacto.html"><i class="bi bi-envelope-at-fill"></i> Escríbenos</a><br />
+                        <a href="tel:918473685"><i class="bi bi-phone"></i> 91 847 36 85</a>
+                    </p>
+                    <p>
+                        <a href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank">
+                            <i class="bi bi-geo-alt-fill"></i> Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)
+                        </a>
+                    </p>
+                </div>
+                <!--d-flex: convierte el contenedor en un flex container (horizontal por defecto).
+                align-items-center: centra verticalmente los íconos.
+                justify-content-center: centra horizontalmente. -->
+                <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                    <a href="https://www.facebook.com/elventanaldelasierra" target="_blank">
+                        <i class="bi bi-facebook fs-4 me-2"></i>
+                    </a>
+                    <a href="https://www.youtube.com/user/elventanaldelasierra" target="_blank">
+                        <i class="bi bi-youtube fs-4 me-2"></i>
+                    </a>
+                    <a href="https://www.instagram.com/elventanaldelasierracc/" target="_blank">
+                        <i class="bi bi-instagram fs-4"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- fila con mt-5: margen superior grande. pb-3: padding inferior pequeño .
+            pb-md-5: padding inferior grande en pantallas medianas o superiores.-->
+            <div class="row text-center text-md-start mt-5 pb-3 pb-md-5 mx-1 mx-md-2 mx-lg-5 px-1 px-md-2 px-lg-5">
+                <!-- En pantallas medianas o más grandes, ocupa el 100% del ancho. -->
+                <div class="col-md-12">
+                    <p>
+                        © El Ventanal de la Sierra 2025 -
+                        <a href="aviso_legal.html">Aviso legal</a> -
+                        <a href="https://elventanaldelasierra.es/politica-privacidad">Política de privacidad</a> -
+                        <a href="https://elventanaldelasierra.es/politica-cookies">Política de Cookies</a>
+                    </p>
+                    <!-- Botón para abrir el modal de gestión de cookies -->
+                    <div class="localbox">
+                        <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Cookies">
+                            Gestionar preferencias de Cookies
+                        </button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <p>
-                            © El Ventanal de la Sierra 2025 -
-                            <a class="cBody" href="aviso_legal.html">Aviso legal</a>-
-                            <a class="cBody" href="https://elventanaldelasierra.es/politica-privacidad"
-                                >Política de privacidad</a
-                            >-
-                            <a class="cBody" href="https://elventanaldelasierra.es/politica-cookies"
-                                >Política de Cookies</a
-                            >-
-                            <a href="#">Gestionar preferencias de Cookies</a>
-                        </p>
+            </div>
+
+            <!-- Modal Cookies -->
+            <!-- Modal para configuración de cookies -->
+            <div class="modal" id="Cookies" tabindex="-1">
+                <!--define el contenedor de contenido del modal. modal-xl: tamaño extra grande (ancho).-->
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <!-- Encabezado del modal -->
+                        <div class="modal-header">
+                            <h2 class="modal-title"><strong>Preferencias de Consentimiento</strong></h2>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Cerrar"></button>
+                        </div>
+                        <!-- Cuerpo del modal con descripción y acordeón -->
+                        <div class="modal-body">
+                            <p class="mt-1">
+                                <strong>Tu privacidad es importante para nosotros</strong><br /><br />
+                                Las cookies son pequeños archivos de texto que se almacenan en tu navegador cuando
+                                visitas nuestra web. Utilizamos cookies para diferentes objetivos y para mejorar tu
+                                experiencia en nuestro sitio web (por ejemplo, para recordar tus detalles de acceso).
+                                Puedes cambiar tus preferencias y rechazar que algunos tipos de cookies sean almacenados
+                                mientras estás navegando en nuestra web. También puedes cancelar cualquier cookie ya
+                                almacenada en tu navegador, pero recuerda que cancelar las cookies puede impedirte
+                                utilizar algunas partes de nuestra web.
+                            </p>
+
+                            <!-- contenedor general del acordeón.
+                             accordion-flush: elimina bordes y espacios exteriores, estilo más limpio.-->
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <!-- Cookies necesarias -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingNecesarias">
+                                        <!--accordion-button: botón que expande o contrae el acordeón.
+                                       collapsed: indica que el panel está contraído inicialmente.-->
+                                        <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseNecesarias"
+                                            aria-expanded="false"
+                                            aria-controls="collapseNecesarias">
+                                            Cookies Estrictamente Necesarias
+                                            <!--form-check: clase base para un elemento de formulario.
+                                            form-switch: convierte un checkbox en un interruptor tipo switch.
+                                            ms-3: margen izquierdo (start) para separar el switch del texto (espaciado hacia la derecha en LTR).
+                                            -->
+                                            <label class="form-check form-switch ms-3">
+                                                <input type="checkbox" class="form-check-input" checked disabled />
+                                                Siempre habilitadas
+                                            </label>
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapseNecesarias"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="headingNecesarias"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            Estas cookies son esenciales para proveerte los servicios disponibles en
+                                            nuestra web y para permitirte utilizar algunas características de nuestra
+                                            web. Sin estas cookies, no podemos proveer algunos servicios de nuestro
+                                            sitio web.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Cookies analíticas -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingAnaliticas">
+                                        <button
+                                            class="accordion-button collapsed"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapseAnaliticas"
+                                            aria-expanded="false"
+                                            aria-controls="collapseAnaliticas">
+                                            Cookies Analíticas
+                                            <!-- Interruptor de activación -->
+                                            <label class="form-check form-switch ms-3">
+                                                <input type="checkbox" class="form-check-input" />
+                                                1 Servicio
+                                            </label>
+                                        </button>
+                                    </h2>
+                                    <div
+                                        id="collapseAnaliticas"
+                                        class="accordion-collapse collapse"
+                                        aria-labelledby="headingAnaliticas"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <strong>Google Analytics</strong><br />
+                                            Estas cookies son utilizadas para recopilar información, para analizar el
+                                            tráfico y la forma en que los usuarios utilizan nuestra web. Por ejemplo,
+                                            estas cookies pueden recopilar datos como cuánto tiempo llevas navegado en
+                                            nuestro sitio web o qué páginas visitas, cosa que nos ayuda a comprender
+                                            cómo podemos mejorar nuestra web para ti. La información recopilada con
+                                            estas cookies de rastreo y rendimiento no identifican a ningún visitante
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <strong>Más información</strong><br />
+                                Para cualquier duda en relación con nuestra política de cookies y tus preferencias,
+                                infórmate en nuestra
+                                <a href="https://elventanaldelasierra.es/politica-cookies">
+                                    <strong>Política de Cookies</strong> </a
+                                >.
+                            </p>
+                        </div>
+                        <!-- Pie del modal con botones de acción -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar todas</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Rechazar todas</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                                Guardar Preferencias
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
