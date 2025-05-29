@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Ocio</title>
+        <link rel="icon" href="images/favicon.png" type="image/x-icon" />
 
         <!-- Bootstrap 5 -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
@@ -132,9 +133,8 @@
                                     </div>
                                     <!-- Modal body -->
                                     <div class="modal-body text-start">
-                                       
                                         <p class="mt-1 localInfo">
-                                           <strong>¡Bienvenidos a NOVA JUMP!</strong><br /><br />
+                                            <strong>¡Bienvenidos a NOVA JUMP!</strong><br /><br />
                                             Un mundo de <strong>ocio, deporte y diversión</strong> para todas las
                                             edades, donde la energía no se agota y las risas están garantizadas. Con más
                                             de <strong>1.200 m² de camas elásticas y zonas de juego</strong>, NOVA JUMP
@@ -252,28 +252,28 @@
                                                 referrerpolicy="strict-origin-when-cross-origin"
                                                 allowfullscreen></iframe>
                                         </div>
-                                    
-                                    <!--página original-->
-                                    <div class="info">
-                                        <button
-                                            type="button"
-                                            class="btn btn-success"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#aviso2.5">
-                                            <a
-                                                href="https://elventanaldelasierra.es/local/pause-and-play"
-                                                class="text-white"
-                                                >Más info</a
-                                            >
-                                        </button>
+
+                                        <!--página original-->
+                                        <div class="info">
+                                            <button
+                                                type="button"
+                                                class="btn btn-success"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#aviso2.5">
+                                                <a
+                                                    href="https://elventanaldelasierra.es/local/pause-and-play"
+                                                    class="text-white"
+                                                    >Más info</a
+                                                >
+                                            </button>
+                                        </div>
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                                Close
+                                            </button>
+                                        </div>
                                     </div>
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-                                            Close
-                                        </button>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                         </div>
@@ -337,23 +337,23 @@
                                                 referrerpolicy="strict-origin-when-cross-origin"
                                                 allowfullscreen></iframe>
                                         </div>
-                                    
-                                    <!--página original-->
-                                    <div class="info">
-                                        <button
-                                            type="button"
-                                            class="btn btn-success"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#aviso3.5">
-                                            <a href="#" class="text-white">Más info</a>
-                                        </button>
-                                    </div>
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-                                            Close
-                                        </button>
-                                    </div>
+
+                                        <!--página original-->
+                                        <div class="info">
+                                            <button
+                                                type="button"
+                                                class="btn btn-success"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#aviso3.5">
+                                                <a href="#" class="text-white">Más info</a>
+                                            </button>
+                                        </div>
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                                                Close
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -365,11 +365,11 @@
 
         <!-- Footer -->
         <footer class="container-fluid bg-dark text-white">
-         <!--fila con margen horizontal (x) mx-1 (pequeño) mx-md-2(medio) mx-lg-5 (grandes)
+            <!--fila con margen horizontal (x) mx-1 (pequeño) mx-md-2(medio) mx-lg-5 (grandes)
          px-*: Padding horizontal (relleno interno): px-1: poco espacio en pantallas pequeñas. 
-        pt-5: Padding superior (espacio interno arriba) grande.-->  
-            <div class="row mx-1 mx-md-2 mx-lg-5 px-1 px-md-2 px-lg-5 pt-5">
-               <!--col-lg-*: Columnas en pantallas grandes: col-lg-4: Ocupa 4 de 12 columnas, ect.-->
+        pt-5: Padding superior (espacio interno arriba) grande.-->
+            <div class="row mx-1 mx-md-2 px-1 px-md-2 px-lg-5 pt-5">
+                <!--col-lg-*: Columnas en pantallas grandes: col-lg-4: Ocupa 4 de 12 columnas, ect.-->
                 <div class="col-lg-4">
                     <p>
                         Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
@@ -395,7 +395,10 @@
                         </a>
                     </p>
                 </div>
-                <div class="col-lg-1 ">
+                <!--d-flex: convierte el contenedor en un flex container (horizontal por defecto).
+                align-items-center: centra verticalmente los íconos.
+                justify-content-center: centra horizontalmente. -->
+                <div class="col-lg-1 d-flex align-items-center justify-content-center">
                     <a href="https://www.facebook.com/elventanaldelasierra" target="_blank">
                         <i class="bi bi-facebook fs-4 me-2"></i>
                     </a>
@@ -407,11 +410,11 @@
                     </a>
                 </div>
             </div>
-            
+
             <!-- fila con mt-5: margen superior grande. pb-3: padding inferior pequeño .
             pb-md-5: padding inferior grande en pantallas medianas o superiores.-->
-            <div class="row mt-5 pb-3 pb-md-5 mx-1 mx-md-2 mx-lg-5 px-1 px-md-2 px-lg-5">
-               <!-- En pantallas medianas o más grandes, ocupa el 100% del ancho. -->
+            <div class="row text-center text-md-start mt-5 pb-3 pb-md-5 mx-1 mx-md-2 mx-lg-5 px-1 px-md-2 px-lg-5">
+                <!-- En pantallas medianas o más grandes, ocupa el 100% del ancho. -->
                 <div class="col-md-12">
                     <p>
                         © El Ventanal de la Sierra 2025 -
@@ -431,10 +434,10 @@
             <!-- Modal Cookies -->
             <!-- Modal para configuración de cookies -->
             <div class="modal" id="Cookies" tabindex="-1">
-               <!--define el contenedor de contenido del modal. modal-xl: tamaño extra grande (ancho).-->
+                <!--define el contenedor de contenido del modal. modal-xl: tamaño extra grande (ancho).-->
                 <div class="modal-dialog modal-xl">
                     <div class="modal-content">
-                       <!-- Encabezado del modal -->
+                        <!-- Encabezado del modal -->
                         <div class="modal-header">
                             <h2 class="modal-title"><strong>Preferencias de Consentimiento</strong></h2>
                             <button
@@ -455,14 +458,14 @@
                                 almacenada en tu navegador, pero recuerda que cancelar las cookies puede impedirte
                                 utilizar algunas partes de nuestra web.
                             </p>
-                            
-                             <!-- contenedor general del acordeón.
+
+                            <!-- contenedor general del acordeón.
                              accordion-flush: elimina bordes y espacios exteriores, estilo más limpio.-->
                             <div class="accordion accordion-flush" id="accordionFlushExample">
                                 <!-- Cookies necesarias -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingNecesarias">
-                                       <!--accordion-button: botón que expande o contrae el acordeón.
+                                        <!--accordion-button: botón que expande o contrae el acordeón.
                                        collapsed: indica que el panel está contraído inicialmente.-->
                                         <button
                                             class="accordion-button collapsed"
