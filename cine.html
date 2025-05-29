@@ -1,138 +1,147 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Cine</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-        <link rel="stylesheet" href="cartelera.json" />
-        <link rel="stylesheet" href="centroComercial.css" />
-    </head>
-    <body class="bg-dark">
-        <header class="text-white text-center my-4">
-            <h1 class="fw-bold"><i class="bi bi-film"></i> CINE <i class="bi bi-film"></i></h1>
-            <h3 class="fw-bold">EL VENTANAL DE LA SIERRA</h3>
-        </header>
-        <article class="bg-light pt-3 container-fluid container-md">
-            <section class="bg-dark text-white py-4 mb-4 text-center">
-                <h2><i class="bi bi-hourglass"></i> HORARIOS</h2>
-                <div class="d-flex justify-content-center">
-                    <ol class="list-unstyled">
-                        <li>18:00-19:20</li>
-                        <li>19:10-20:30</li>
-                        <li>21:30-23:00</li>
-                        <li>22:15-23:40</li>
-                    </ol>
-                </div>
-            </section>
-            <section class="bg-light py-4 mb-4 text-center">
-                <section class="bg-light py-4 mb-4 text-center">
-                    <h2>SITUACIÓN</h2>
-                    <h5>CARTELERA</h5>
-                    <div class="container-fluid">
-                        <div class="row flex-nowrap overflow-auto pb-3" id="cartelera-container">
-                            <!-- Las películas se insertarán aquí dinámicamente -->
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <section class="bg-dark text-white py-4 mb-4 text-center">
-                <h2><i class="bi bi-box"></i> SALAS</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <ul class="row list-unstyled">
-                            <li class="col-6">Sala 1</li>
-                            <li class="col-6">Sala 2</li>
-                            <li class="col-6">Sala 3</li>
-                            <li class="col-6">Sala 4</li>
-                            <li class="col-6">Sala 5</li>
-                            <li class="col-6">Sala 6</li>
-                            <li class="col-6">Sala 7</li>
-                            <li class="col-6">Sala 8</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="bg-light text-center py-4 mb-4">
-                <h2><i class="bi bi-cup-straw"></i>CAFETERÍA</h2>
-                <h3>Horarios - 9am - 11pm</h3>
-                <p class="mx-auto">
-                    La cafetería de nuestro cine es el lugar perfecto para disfrutar antes o después de tu película.
-                    Ofrecemos una variedad de cafés, snacks, postres y opciones rápidas para todos los gustos. Con un
-                    ambiente acogedor y servicio rápido, buscamos que tu experiencia sea completa. ¡Ven a relajarte con
-                    nosotros y saborea cada momento!
-                </p>
-                <img src="images/cafe.jpg" class="img-fluid mt-3" />
-            </section>
-            <section class="bg-dark text-white text-center">
-                <h1 class="display-4">COMPRA TUS ENTRADAS AQUÍ</h1>
-                <div class="mt-3">
-                    <a href="#" class="fw-bold fs-4 text-white text-decoration-underline">Página de compra</a>
-                </div>
-            </section>
-        </article>
 
-        <!-- Footer -->
-        <footer class="bg-dark text-white py-4">
+<head>
+    <meta charset="UTF-8" />
+    <title>Cine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="cartelera.json" />
+    <link rel="stylesheet" href="centroComercial.css" />
+
+</head>
+
+<body class="bg-dark">
+    <header class="text-white text-center my-4">
+        <h1 class="fw-bold"><i class="bi bi-film"></i> CINE <i class="bi bi-film"></i></h1>
+        <h3 class="fw-bold">EL VENTANAL DE LA SIERRA</h3>
+    </header>
+    <article class="bg-light pt-3 container-fluid container-md pb-4">
+
+        <section class="bg-dark text-white py-4 mb-4 text-center">
+            <h2><i class="bi bi-hourglass"></i> HORARIOS</h2>
             <div class="container">
-                <div class="row text-center text-md-start">
-                    <div class="col-md-3">
-                        <p>
-                            Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
-                            proporcionarles emociones.
-                        </p>
-                        <a href="https://www.nhood.es/ target=_blank"
-                            ><img src="images/logo-centro-comercial-2.png"
-                        /></a>
-                    </div>
-                    <div class="col-md-3">
-                        <h5>Horarios</h5>
-                        <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
-                    </div>
-                    <div class="col-md-3">
-                        <h5>Contacto</h5>
-                        <p>
-                            <a href="contacto.html" class="text-white">Escríbenos</a><br /><a
-                                href="tel:918473685"
-                                class="text-white"
-                                >91 847 36 85</a
-                            >
-                            <a class="color_foot_txt" href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank"
-                                >Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</a
-                            >
-                        </p>
-                    </div>
-                    <div class="col-md-3">
-                        <a href="https://www.facebook.com/elventanaldelasierra"
-                            ><i class="bi bi-facebook me-2 text-white"></i
-                        ></a>
-                        <a href="https://www.youtube.com/user/elventanaldelasierra"
-                            ><i class="bi bi-youtube me-2 text-white"></i
-                        ></a>
-                        <a href="https://www.instagram.com/elventanaldelasierracc/"
-                            ><i class="bi bi-instagram text-white"></i
-                        ></a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <p>
-                            © El Ventanal de la Sierra 2025 -
-                            <a class="cBody" href="aviso_legal.html">Aviso legal</a>-
-                            <a class="cBody" href="https://elventanaldelasierra.es/politica-privacidad"
-                                >Política de privacidad</a
-                            >-
-                            <a class="cBody" href="https://elventanaldelasierra.es/politica-cookies"
-                                >Política de Cookies</a
-                            >-
-                            <a href="#">Gestionar preferencias de Cookies</a>
-                        </p>
-                    </div>
+                <div class="d-flex justify-content-center gap-5 mt-3">
+                    <ul class="list-unstyled text-start">
+                        <li>10:00 - Dune: Parte Dos</li>
+                        <li>12:00 - MI: Sentencia final</li>
+                        <li>14:00 - Minecraft</li>
+                        <li>16:00 - Superman</li>
+                    </ul>
+                    <ul class="list-unstyled text-start">
+                        <li>18:00 - El nuevo imperio</li>
+                        <li>20:00 - Blancanieves</li>
+                        <li>22:00 - Dune: Parte Dos</li>
+                        <li>00:00 - MI: Sentencia final</li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-        <script id="cartelera-json" type="application/json">
+        </section>
+
+
+        <section class="bg-light mb-4 text-center">
+            <h2>SITUACIÓN</h2>
+            <h5>CARTELERA</h5>
+            <div class="container-fluid mt-5">
+                <div class="row flex-nowrap overflow-auto pb-3" id="cartelera-container">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark text-white py-4 mb-4 text-center">
+            <h2><i class="bi bi-box"></i> SALAS</h2>
+            <div class="container ps-5">
+                <div class="d-flex justify-content-center gap-5 mt-3">
+                    <ul class="list-unstyled text-start">
+                        <li><strong>Sala 1:</strong> 10:00 - Dune: Parte Dos, 16:00 - Superman</li>
+                        <li><strong>Sala 2:</strong> 12:00 - MI: Sentencia final, 20:00 - Blancanieves</li>
+                        <li><strong>Sala 3:</strong> 14:00 - Minecraft, 22:00 - Dune: Parte Dos</li>
+                        <li><strong>Sala 4:</strong> 10:00 - Superman, 18:00 - El nuevo imperio</li>
+                    </ul>
+                    <ul class="list-unstyled text-start">
+                        <li><strong>Sala 5:</strong> 12:00 - Blancanieves, 22:00 - Minecraft</li>
+                        <li><strong>Sala 6:</strong> 14:00 - Dune: Parte Dos, 20:00 - MI: Sentencia final</li>
+                        <li><strong>Sala 7:</strong> 16:00 - Minecraft, 00:00 - Superman</li>
+                        <li><strong>Sala 8:</strong> 18:00 - Blancanieves, 00:00 - El nuevo imperio</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="bg-light text-center py-4 mb-4 mx-5">
+            <h2><i class="bi bi-cup-straw"></i>CAFETERÍA</h2>
+            <h3>Horarios - 9am - 11pm</h3>
+            <p class="mx-auto">
+                La cafetería de nuestro cine es el lugar perfecto para disfrutar antes o después de tu película.
+                Ofrecemos una variedad de cafés, snacks, postres y opciones rápidas para todos los gustos. Con un
+                ambiente acogedor y servicio rápido, buscamos que tu experiencia sea completa. ¡Ven a relajarte con
+                nosotros y saborea cada momento!
+            </p>
+            <img src="images/cafe.jpg" class="img-fluid mt-3" style="width: 85%;" />
+        </section>
+        <section class="bg-dark text-white text-center p-4 pb-5">
+            <h1 class="display-4">COMPRA TUS ENTRADAS AQUÍ</h1>
+            <div class="mt-3">
+                <a href="https://www.cinesa.es/promociones/fiesta-del-cine/"
+                    class="fw-bold fs-4 text-decoration-underline">Página de
+                    compra</a>
+            </div>
+        </section>
+    </article>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3">
+                    <p>
+                        Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
+                        proporcionarles emociones.
+                    </p>
+                    <a href="https://www.nhood.es/ target=_blank"><img src="images/logo-centro-comercial-2.png" /></a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Horarios</h5>
+                    <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p>
+                        <a href="contacto.html" class="text-white">Escríbenos</a><br /><a href="tel:918473685"
+                            class="text-white">91 847 36 85</a>
+                        <a class="color_foot_txt" href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank">Avda.
+                            De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</a>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.facebook.com/elventanaldelasierra"><i
+                            class="bi bi-facebook me-2 text-white"></i></a>
+                    <a href="https://www.youtube.com/user/elventanaldelasierra"><i
+                            class="bi bi-youtube me-2 text-white"></i></a>
+                    <a href="https://www.instagram.com/elventanaldelasierracc/"><i
+                            class="bi bi-instagram text-white"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        © El Ventanal de la Sierra 2025 -
+                        <a class="cBody" href="aviso_legal.html">Aviso legal</a>-
+                        <a class="cBody" href="https://elventanaldelasierra.es/politica-privacidad">Política de
+                            privacidad</a>-
+                        <a class="cBody" href="https://elventanaldelasierra.es/politica-cookies">Política de
+                            Cookies</a>-
+                        <a href="#">Gestionar preferencias de Cookies</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script id="cartelera-json" type="application/json">
             [
                 {
                     "título": "Dune: Parte Dos",
@@ -178,26 +187,69 @@
                 }
             ]
         </script>
-        <script>
-            const rawData = document.getElementById("cartelera-json").textContent;
-            const peliculas = JSON.parse(rawData);
+    <script>
+        const rawData = document.getElementById("cartelera-json").textContent;
+        const peliculas = JSON.parse(rawData);
 
-            const container = document.getElementById("cartelera-container");
+        const container = document.getElementById("cartelera-container");
 
-            let html = "";
-            for (let i = 0; i < peliculas.length; i++) {
-                if (i % 3 === 0) html += '<div class="row justify-content-center mb-4">';
-                html += `
-            <div class="col-md-4 text-center mb-4">
-                <h5 class="fw-bold">${peliculas[i].título}</h5>
-                <p class="text-muted">Dir. ${peliculas[i].director}</p>
-                <img src="${peliculas[i].imagen}" class="img-fluid rounded shadow" alt="${peliculas[i].título}" />
+        let html = '<div class="row gx-2 justify-content-start">';
+        for (let i = 0; i < peliculas.length; i++) {
+            const pelicula = peliculas[i];
+            html += `
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-3">
+        <h6 class="fw-bold mb-1">${pelicula.título}</h6>
+        <p class="text-muted small mb-1">${pelicula.director}</p>
+        <img src="${pelicula.imagen}" 
+             class="cartelera img-fluid rounded shadow w-100"
+             alt="${pelicula.título}" 
+             style="cursor:pointer"
+             data-index="${i}" 
+             data-bs-toggle="modal" 
+             data-bs-target="#infoPeliculaModal" />
+    </div>`;
+        }
+        html += '</div>';
+        container.innerHTML = html;
+
+        // Evento que llena el modal con la info correspondiente
+        document.querySelectorAll('img[data-bs-target="#infoPeliculaModal"]').forEach(img => {
+            img.addEventListener('click', (e) => {
+                const index = e.target.getAttribute('data-index');
+                const peli = peliculas[index];
+
+                document.getElementById('modalTitulo').textContent = peli.título;
+                document.getElementById('modalDirector').textContent = peli.director;
+                document.getElementById('modalActores').textContent = peli.actores.join(', ');
+                document.getElementById('modalSinopsis').textContent = peli.sinopsis;
+                document.getElementById('modalImagen').src = peli.imagen;
+                document.getElementById('modalImagen').alt = peli.título;
+            });
+        });
+
+
+    </script>
+    <!-- Modal de Película -->
+    <div class="modal fade" id="infoPeliculaModal" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modalTitulo">
+                    </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body d-flex flex-column flex-md-row align-items-start">
+                    <img id="modalImagen" class="img-fluid rounded me-md-3 mb-3 mb-md-0" style="max-width: 250px;" />
+                    <div>
+                        <p><strong>Director:</strong> <span id="modalDirector"></span></p>
+                        <p><strong>Actores:</strong> <span id="modalActores"></span></p>
+                        <p><strong>Sinopsis:</strong> <span id="modalSinopsis"></span></p>
+                    </div>
+                </div>
             </div>
-        `;
-                if ((i + 1) % 3 === 0 || i === peliculas.length - 1) html += "</div>";
-            }
+        </div>
+    </div>
 
-            container.innerHTML = html;
-        </script>
-    </body>
+</body>
+
 </html>
