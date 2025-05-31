@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="centroComercial.css" />
+    <style>
+        .gris,
+        textarea {
+            color: #555 !important;
+        }
+    </style>
 </head>
 
 <body style="background-image: url(images/contacto.jpeg);
@@ -78,55 +84,57 @@
             </div>
         </div>
     </header>
-
     <article class="container mb-5 ">
-        <h1 class="text-center mt-4 mb-3">FORMULARIO DE SOCIO</h1>
+        <h1 class="text-center mt-4 mb-3" style="text-shadow: 2px 2px 2px #999;">FORMULARIO DE SOCIO</h1>
         <form action="http://www.cursos-diseño.es/mostrar.php" class="bg-light p-3 border col-lg-10 col-xxl-8 mx-auto"
             style="border-radius: 2%;">
 
             <div class="row row-cols-1 row-cols-md-2">
-                <div class="mb-3 col">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" class="form-control" required>
+                <div class="mb-3 col ">
+                    <h7>Nombre</h7>
+                    <input type="text" name="nombre" id="nombre" class="form-control gris" required>
                 </div>
 
-                <div class="mb-3 col">
-                    <label for="apellidos" class="form-label">Apellidos</label>
-                    <input type="text" name="apellidos" id="apellidos" class="form-control" required>
+                <div class="mb-3 col ">
+                    <h7>Apellidos</h7>
+                    <input type="text" name="apellidos" id="apellidos" class="form-control gris" required>
                 </div>
             </div>
 
-            <div class="mb-3">
-                <label for="direccion" class="form-label">Dirección</label>
-                <input type="text" name="direccion" id="direccion" class="form-control" required>
+            <div class="mb-3 ">
+                <h7>Dirección</h7>
+                <input type="text" name="direccion" id="direccion" class="form-control gris" required>
             </div>
 
             <div class="row row-cols-1 row-cols-md-2">
                 <div class="mb-3 col">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" required
+                    <h7>Email</h7>
+                    <input type="email" name="email" id="email" class="form-control gris" required
                         oninput="confirmar_email.pattern = this.value">
                 </div>
 
-                <div class="mb-3 col">
-                    <label for="confirmar_email" class="form-label">Confirmar Email</label>
-                    <input type="email" name="confirmar_email" id="confirmar_email" class="form-control" required
+                <div class="mb-3 col ">
+                    <h7>Confirmar Email</h7>
+                    <input type="email" name="confirmar_email" id="confirmar_email" class="form-control gris" required
                         title="Los correos electrónicos deben coincidir.">
                 </div>
             </div>
 
-            <div class="mb-3">
-                <label for="telefono" class="form-label">Teléfono</label>
-                <input type="tel" name="telefono" id="telefono" class="form-control" required>
+            <div class="mb-3 ">
+                <h7>Teléfono</h7>
+                <input type="tel" name="telefono" id="telefono" class="form-control gris" required>
             </div>
 
-            <div class="mb-3">
-                <label for="comentarios" class="form-label">Comentarios</label>
-                <textarea name="comentarios" id="comentarios" rows="4" class="form-control" required></textarea>
+            <div class="mb-3 ">
+                <h7>Comentarios</h7>
+                <textarea name="comentarios" id="comentarios" rows="4" class="form-control mb-5" required></textarea>
             </div>
 
-            <input type="submit" class="btn btn-primary" value="Enviar">
-            <input type="reset" class="btn btn-outline-primary" value="Restablecer">
+            <div>
+                <input type="submit" class="btn btn-outline-secondary me-2" value="Enviar">
+                <input type="reset" class="btn btn-outline-secondary" value="Restablecer">
+            </div>
+
         </form>
     </article>
 
