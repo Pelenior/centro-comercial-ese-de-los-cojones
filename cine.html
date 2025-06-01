@@ -9,6 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="cartelera.json" />
     <link rel="stylesheet" href="centroComercial.css" />
+    <style>
+        .compra {
+            color: deeppink;
+            border-color: mediumpurple;
+        }
+
+        .compra:hover {
+            color: mediumpurple;
+            border-color: deeppink;
+            background-color: deeppink;
+        }
+    </style>
 
 </head>
 
@@ -19,85 +31,91 @@
     </header>
     <article class="bg-light pt-3 container-fluid container-md pb-4">
 
-        <section class="bg-dark text-white py-4 mb-4 text-center">
-            <h2><i class="bi bi-calendar-week"></i> HORARIO SEMANAL</h2>
-            <div class="container d-flex justify-content-center">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-dark text-white d-flex justify-content-between">
-                        <strong>Lunes: </strong> <span> 10:00 - 22:00</span>
-                    </li>
-                    <li class="list-group-item bg-dark text-white d-flex justify-content-between">
-                        <strong>Martes:</strong> <span>10:00 - 22:00</span>
-                    </li>
-                    <li class="list-group-item bg-dark text-white d-flex justify-content-between">
-                        <strong class="pe-1">Miércoles:</strong> <span>10:00 - 22:00</span>
-                    </li>
-                    <li class="list-group-item bg-dark text-white d-flex justify-content-between">
-                        <strong>Jueves:</strong> <span>10:00 - 22:00</span>
-                    </li>
-                    <li class="list-group-item bg-dark text-white d-flex justify-content-between">
-                        <strong>Viernes:</strong> <span>10:00 - 00:00</span>
-                    </li>
-                    <li class="list-group-item bg-dark text-white d-flex justify-content-between">
-                        <strong>Sábado:</strong> <span>10:00 - 00:00</span>
-                    </li>
-                    <li class="list-group-item bg-dark text-white d-flex justify-content-between">
-                        <strong>Domingo:</strong> <span>10:00 - 22:00</span>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-
-        <section class="bg-light mb-4 text-center">
-            <h2>SITUACIÓN</h2>
-            <h5>CARTELERA</h5>
-            <div class="container-fluid mt-5">
-                <div class="row flex-nowrap overflow-auto pb-3" id="cartelera-container">
-                </div>
-            </div>
-        </section>
-
-        <section class="bg-dark text-white py-4 mb-4 text-center">
-            <h2><i class="bi bi-box"></i> SALAS</h2>
-            <div class="container ps-5">
-                <div class="d-flex justify-content-center gap-5 mt-3">
-                    <ul class="list-unstyled text-start">
-                        <li><strong>Sala 1:</strong> 10:00 - Dune: Parte Dos, 16:00 - Superman</li>
-                        <li><strong>Sala 2:</strong> 12:00 - MI: Sentencia final, 20:00 - Blancanieves</li>
-                        <li><strong>Sala 3:</strong> 14:00 - Minecraft, 22:00 - Dune: Parte Dos</li>
-                        <li><strong>Sala 4:</strong> 10:00 - Superman, 18:00 - El nuevo imperio</li>
-                    </ul>
-                    <ul class="list-unstyled text-start">
-                        <li><strong>Sala 5:</strong> 12:00 - Blancanieves, 22:00 - Minecraft</li>
-                        <li><strong>Sala 6:</strong> 14:00 - Dune: Parte Dos, 20:00 - MI: Sentencia final</li>
-                        <li><strong>Sala 7:</strong> 16:00 - Minecraft, 00:00 - Superman</li>
-                        <li><strong>Sala 8:</strong> 18:00 - Blancanieves, 00:00 - El nuevo imperio</li>
+        <div class="border border-5 border-dark">
+            <section class="bg-dark text-white py-4 mb-4 text-center">
+                <h2><i class="bi bi-calendar-week"></i> HORARIO SEMANAL</h2>
+                <div class="container d-flex justify-content-center">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                            <strong>Lunes: </strong> <span> 10:00 - 22:00</span>
+                        </li>
+                        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                            <strong>Martes:</strong> <span>10:00 - 22:00</span>
+                        </li>
+                        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                            <strong class="pe-1">Miércoles:</strong> <span>10:00 - 22:00</span>
+                        </li>
+                        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                            <strong>Jueves:</strong> <span>10:00 - 22:00</span>
+                        </li>
+                        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                            <strong>Viernes:</strong> <span>10:00 - 00:00</span>
+                        </li>
+                        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                            <strong>Sábado:</strong> <span>10:00 - 00:00</span>
+                        </li>
+                        <li class="list-group-item bg-dark text-white d-flex justify-content-between">
+                            <strong>Domingo:</strong> <span>10:00 - 22:00</span>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </section>
+            </section>
 
+            <section class="bg-light mb-4 text-center">
+                <h2>SITUACIÓN</h2>
+                <h5>CARTELERA</h5>
+                <div class="container-fluid mt-5">
+                    <div class="row flex-nowrap overflow-auto pb-3" id="cartelera-container">
+                    </div>
+                </div>
+            </section>
 
-        <section class="bg-light text-center py-4 mb-4 mx-5">
-            <h2><i class="bi bi-cup-straw"></i>CAFETERÍA</h2>
-            <h3>Horarios - 9am - 11pm</h3>
-            <p class="mx-auto">
-                La cafetería de nuestro cine es el lugar perfecto para disfrutar antes o después de tu película.
-                Ofrecemos una variedad de cafés, snacks, postres y opciones rápidas para todos los gustos. Con un
-                ambiente acogedor y servicio rápido, buscamos que tu experiencia sea completa. ¡Ven a relajarte con
-                nosotros y saborea cada momento!
-            </p>
-            <img src="images/cafe.jpg" class="img-fluid mt-3" style="width: 85%;" />
-        </section>
-        <section class="bg-dark text-white text-center p-4 pb-5">
-            <h1 class="display-4">COMPRA TUS ENTRADAS AQUÍ</h1>
-            <div class="mt-3">
-                <a href="https://www.cinesa.es/promociones/fiesta-del-cine/"
-                    class="fw-bold fs-4 text-decoration-underline">Página de
-                    compra</a>
-            </div>
-        </section>
+            <section class="bg-dark text-white py-5 mb-4 text-center">
+                <h2><i class="bi bi-box"></i> SALAS</h2>
+                <div class="container ps-5">
+                    <div class="d-flex justify-content-center gap-5 mt-3 pt-5">
+                        <ul class="list-unstyled text-start fs-5">
+                            <li class="pb-4"><strong>Sala 1:</strong> 10:00 - Dune: Parte Dos | 16:00 - Superman</li>
+                            <li class="pb-4"><strong>Sala 2:</strong> 12:00 - MI: Sentencia final | 20:00 - Blancanieves
+                            </li>
+                            <li class="pb-4"><strong>Sala 3:</strong> 14:00 - Minecraft | 22:00 - Dune: Parte Dos</li>
+                            <li class="pb-4"><strong>Sala 4:</strong> 10:00 - Superman | 18:00 - El nuevo imperio</li>
+                        </ul>
+                        <ul class="list-unstyled text-start fs-5">
+                            <li class="pb-4"><strong>Sala 5:</strong> 12:00 - Blancanieves | 22:00 - Minecraft</li>
+                            <li class="pb-4"><strong>Sala 6:</strong> 14:00 - Dune: Parte Dos | 20:00 - MI: Sentencia
+                                final
+                            </li>
+                            <li class="pb-4"><strong>Sala 7:</strong> 16:00 - Minecraft | 00:00 - Superman</li>
+                            <li class="pb-4"><strong>Sala 8:</strong> 18:00 - Blancanieves | 00:00 - El nuevo imperio
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-light text-center py-4 mb-4 mx-5">
+                <h2><i class="bi bi-cup-straw"></i>CAFETERÍA</h2>
+                <h3>Horarios - 9am - 11pm</h3>
+                <p class="mx-auto">
+                    La cafetería de nuestro cine es el lugar perfecto para disfrutar antes o después de tu película.
+                    Ofrecemos una variedad de cafés, snacks, postres y opciones rápidas para todos los gustos. Con un
+                    ambiente acogedor y servicio rápido, buscamos que tu experiencia sea completa. ¡Ven a relajarte con
+                    nosotros y saborea cada momento!
+                </p>
+                <img src="images/cafe.jpg" class="img-fluid mt-3" style="width: 85%;" />
+            </section>
+
+            <section class="bg-dark text-white text-center p-4 pb-5">
+                <h1 class="display-4">COMPRA TUS ENTRADAS AQUÍ</h1>
+                <div class="mt-5">
+                    <a href="https://www.cinesa.es/promociones/fiesta-del-cine/"
+                        class="fw-bold fs-1 btn btn-outline-secondary compra">Página
+                        de
+                        compra</a>
+                </div>
+            </section>
+        </div>
     </article>
 
     <!-- Footer -->
@@ -238,17 +256,16 @@
 
 
     </script>
-    <!-- Modal de Película -->
-    <div class="modal fade" id="infoPeliculaModal" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title" id="modalTitulo">
-                    </h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+    <!-- Modal -->
+    <div class="modal fade" id="infoPeliculaModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered ">
+            <div class="modal-content bg-dark">
+                <div class="modal-header text-white">
+                    <h2 class="modal-title" id="modalTitulo"></h2>
                 </div>
-                <div class="modal-body d-flex flex-column flex-md-row align-items-start">
-                    <img id="modalImagen" class="img-fluid rounded me-md-3 mb-3 mb-md-0" style="max-width: 250px;" />
+                <div class="modal-body d-flex flex-column flex-md-row align-items-start text-white">
+                    <img id="modalImagen" class="img-fluid rounded me-md-3 mb-3 mb-md-0"
+                        style="max-width: 250px; box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.2);" />
                     <div>
                         <p><strong>Director:</strong> <span id="modalDirector"></span></p>
                         <p><strong>Actores:</strong> <span id="modalActores"></span></p>
