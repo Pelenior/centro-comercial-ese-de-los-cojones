@@ -26,68 +26,74 @@
 </head>
 
 <body class="bg-dark">
-    <header class="container-fluid py-3">
-        <!-- fila flexible (d-flex), espaciado entre elementos, alineación vertical centrada.-->
+    <header class="container-fluid py-3 bg-dark text-white">
         <div class="d-flex justify-content-between align-items-center">
             <a href="index.html"><img src="images/logo-centro-comercial.png" alt="Logo" /></a>
-            <!-- ul class="nav": Crea una lista de elementos de navegación.
-                                            	li class="nav-item": Cada elemento del menú.
-                                            	a class="nav-link: Un enlace dentro del menú-->
-            <nav>
-                <ul class="nav">
-                    <!-- menu secundario-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://elventanaldelasierra.es/horario">Horarios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" alt="Servicios"
-                            href="https://elventanaldelasierra.es/servicios">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" alt="Visitar" href="visitanos.html">Cómo llegar</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" alt="Contacto" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://elventanaldelasierra.es/alquiler-espacios">Alquiler de
-                            espacio</a>
-                    </li>
-                </ul>
-            </nav>
 
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" alt="Tiendas" href="tiendas.html">Tiendas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" alt="Restauracion" href="restaurante.html">Restauración</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" alt="Ocio" href="ocio.html">Ocio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" alt="Newsletter"
-                            href="https://elventanaldelasierra.es/newsletter">Newsletter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" alt="Cine" href="cine.html">Cine</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" alt="Blog" href="https://elventanaldelasierra.es/blog/">Blog</a>
-                    </li>
-                </ul>
-            </nav>
+            <button class="btn p-0 border-0 d-md-none text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuDesplegable">
+                <i class="bi bi-list fs-1"></i>
+            </button>
 
-            <div>
-                <a href="https://www.facebook.com/elventanaldelasierra" target="_blank"><i
-                        class="bi bi-facebook fs-4 me-2"></i></a>
-                <a href="https://www.youtube.com/user/elventanaldelasierra" target="_blank"><i
-                        class="bi bi-youtube fs-4 me-2"></i></a>
-                <a href="https://www.instagram.com/elventanaldelasierracc/" target="_blank"><i
-                        class="bi bi-instagram fs-4"></i></a>
+            <!-- El nuevo nav -->
+            <div class="d-none d-md-flex gap-4">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link text-white link-hover"
+                                href="https://elventanaldelasierra.es/horario">Horarios</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover"
+                                href="https://elventanaldelasierra.es/servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover" href="visitanos.html">Cómo
+                                llegar</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover"
+                                href="https://elventanaldelasierra.es/alquiler-espacios">Alquiler de espacio</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link text-white link-hover" href="tiendas.html">Tiendas</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover"
+                                href="restaurante.html">Restauración</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover" href="ocio.html">Ocio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover"
+                                href="https://elventanaldelasierra.es/newsletter">Newsletter</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover" href="cine.html">Cine</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover"
+                                href="https://elventanaldelasierra.es/blog/">Blog</a></li>
+                    </ul>
+                </nav>
             </div>
+        </div>
+
+        <!-- Desplegable -->
+        <div class="collapse d-md-none mt-3" id="menuDesplegable">
+            <ul class="list-group bg-dark">
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="https://elventanaldelasierra.es/horario">Horarios</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="https://elventanaldelasierra.es/servicios">Servicios</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="visitanos.html">Cómo llegar</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="contacto.html">Contacto</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="https://elventanaldelasierra.es/alquiler-espacios">Alquiler de espacio</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="tiendas.html">Tiendas</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="restaurante.html">Restauración</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="ocio.html">Ocio</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="https://elventanaldelasierra.es/newsletter">Newsletter</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="cine.html">Cine</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="https://elventanaldelasierra.es/blog/">Blog</a></li>
+            </ul>
         </div>
     </header>
 

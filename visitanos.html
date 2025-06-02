@@ -1,554 +1,551 @@
 <!doctype html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Visitanos</title>
 
-        <!-- Bootstrap 5 -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <link rel="icon" href="images/favicon.png">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visitanos</title>
 
-        <!-- Google Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway:wght@400;700&display=swap"
-            rel="stylesheet" />
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="images/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="centroComercial.css" />
-        <style>
-        #noticia1, #noticia2, #noticia3{
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-}
-        </style>
-    </head>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet" />
 
-    <body>
-        <!--contenedor de ancho completo. Fondo oscuro. Espacio arriba y abajo.-->
-        <header class="container-fluid bg-dark py-3">
-            <!-- fila flexible (d-flex), espaciado entre elementos, alineación vertical centrada.-->
-            <div class="d-flex justify-content-between align-items-center">
-                <a href="index.html"><img src="images/logo-centro-comercial.png" alt="Logo" /></a>
-                <!-- ul class="nav": Crea una lista de elementos de navegación.
-                                            	li class="nav-item": Cada elemento del menú.
-                                            	a class="nav-link: Un enlace dentro del menú-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="centroComercial.css" />
+    <style>
+        #noticia1,
+        #noticia2,
+        #noticia3 {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid py-3 bg-dark text-white">
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="index.html"><img src="images/logo-centro-comercial.png" alt="Logo" /></a>
+
+            <button class="btn p-0 border-0 d-md-none text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuDesplegable">
+                <i class="bi bi-list fs-1"></i>
+            </button>
+
+            <!-- El nuevo nav -->
+            <div class="d-none d-md-flex gap-4">
                 <nav>
                     <ul class="nav">
-                        <!-- menu secundario-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://elventanaldelasierra.es/horario">Horarios</a>
+                        <li class="nav-item"><a class="nav-link text-white link-hover"
+                                href="https://elventanaldelasierra.es/horario">Horarios</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover"
+                                href="https://elventanaldelasierra.es/servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover" href="visitanos.html">Cómo
+                                llegar</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover" href="contacto.html">Contacto</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" alt="Servicios" href="https://elventanaldelasierra.es/servicios"
-                                >Servicios</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" alt="Visitar" href="visitanos.html">Cómo llegar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" alt="Contacto" href="contacto.html">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://elventanaldelasierra.es/alquiler-espacios"
-                                >Alquiler de espacio</a
-                            >
-                        </li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover"
+                                href="https://elventanaldelasierra.es/alquiler-espacios">Alquiler de espacio</a></li>
                     </ul>
                 </nav>
-
                 <nav>
                     <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" alt="Tiendas" href="tiendas.html">Tiendas</a>
+                        <li class="nav-item"><a class="nav-link text-white link-hover" href="tiendas.html">Tiendas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" alt="Restauracion" href="restaurante.html">Restauración</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" alt="Ocio" href="ocio.html">Ocio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" alt="Newsletter" href="https://elventanaldelasierra.es/newsletter"
-                                >Newsletter</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" alt="Cine" href="cine.html">Cine</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" alt="Blog" href="https://elventanaldelasierra.es/blog/">Blog</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover"
+                                href="restaurante.html">Restauración</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover" href="ocio.html">Ocio</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover"
+                                href="https://elventanaldelasierra.es/newsletter">Newsletter</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover" href="cine.html">Cine</a></li>
+                        <li class="nav-item"><a class="nav-link text-white link-hover"
+                                href="https://elventanaldelasierra.es/blog/">Blog</a></li>
                     </ul>
                 </nav>
-
-                <div>
-                    <a href="https://www.facebook.com/elventanaldelasierra" target="_blank"
-                        ><i class="bi bi-facebook fs-4 me-2"></i
-                    ></a>
-                    <a href="https://www.youtube.com/user/elventanaldelasierra" target="_blank"
-                        ><i class="bi bi-youtube fs-4 me-2"></i
-                    ></a>
-                    <a href="https://www.instagram.com/elventanaldelasierracc/" target="_blank"
-                        ><i class="bi bi-instagram fs-4"></i
-                    ></a>
-                </div>
             </div>
-        </header>
+        </div>
 
-        <article>
-            <div class="container py-5">
-                <div class="row justify-content-center text-center mb-5">
-                    <!-- Cómo llegar -->
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
-                        <h2><i class="bi bi-pin-fill"></i> Cómo llegar</h2>
-                        <p>Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</p>
-                    </div>
+        <!-- Desplegable -->
+        <div class="collapse d-md-none mt-3" id="menuDesplegable">
+            <ul class="list-group bg-dark">
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="https://elventanaldelasierra.es/horario">Horarios</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="https://elventanaldelasierra.es/servicios">Servicios</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="visitanos.html">Cómo llegar</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="contacto.html">Contacto</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="https://elventanaldelasierra.es/alquiler-espacios">Alquiler de espacio</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="tiendas.html">Tiendas</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="restaurante.html">Restauración</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="ocio.html">Ocio</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="https://elventanaldelasierra.es/newsletter">Newsletter</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="cine.html">Cine</a></li>
+                <li class="list-group-item bg-dark border-0"><a class="nav-link text-white link-hover"
+                        href="https://elventanaldelasierra.es/blog/">Blog</a></li>
+            </ul>
+        </div>
+    </header>
 
-                    <!-- Parada de autobús -->
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
-                        <h3><i class="bi bi-bus-front"></i> Parada de autobús</h3>
-                        <p>Hay una parada de autobús muy cerca del recinto, accesible desde buses urbanos e interurbanos</p>
-                    </div>
+    <article>
+        <div class="container py-5">
+            <div class="row justify-content-center text-center mb-5">
+                <!-- Cómo llegar -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <h2><i class="bi bi-pin-fill"></i> Cómo llegar</h2>
+                    <p>Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)</p>
+                </div>
 
-                    <!-- Parking -->
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
-                        <h3><i class="bi bi-p-circle-fill"></i> Parking</h3>
-                        <p>
+                <!-- Parada de autobús -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <h3><i class="bi bi-bus-front"></i> Parada de autobús</h3>
+                    <p>Hay una parada de autobús muy cerca del recinto, accesible desde buses urbanos e interurbanos</p>
+                </div>
+
+                <!-- Parking -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <h3><i class="bi bi-p-circle-fill"></i> Parking</h3>
+                    <p>
                         Parking subterráneo gratuito de 300 plazas con acceso desde dentro del recinto.<br>
                         Parking al aire libre dentro del recinto de 500 plazas.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-center mb-5">
-                    <div style="width: 100%; max-width: 800px; aspect-ratio: 3 / 2;">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3026.6697374570485!2d-3.75472!3d40.65921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd417de35e5ae26b%3A0xf5a00f7ab65afcb1!2sCentro%20Comercial%20el%20Ventanal%20de%20la%20Sierra!5e0!3m2!1ses!2ses!4v1589193342710!5m2!1ses!2ses"
-                            style="border:0; width:100%; height:100%;"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="text-center mb-5">
-                    <h2>Plano</h2>
-                    <img src="images/plano.png" alt="Plano" class="img-fluid" style="max-width: 90%; height: auto;">
-                </div>                
-
-                <div class="row justify-content-center text-center mb-3">
-                    <!-- Horarios -->
-                    <div class="col-12 col-md-6 mb-4">
-                        <h2><i class="bi bi-clock-fill"></i> Horarios</h2>
-                        <p>
-                        Comercial: 10:00 a 22:00<br/>
-                        Hipermercado: 09:00 a 22:00<br/>
-                        Restauración:<br/>
-                        Lun-Jue: 09:00 a 23:30<br/>
-                        Vie-Sab: 09:00 a 01:00<br/>
-                        Dom: 09:00 a 23:30
-                        </p>
-                    </div>
-
-                    <!-- Contacto -->
-                    <div class="col-12 col-md-6 mb-3">
-                        <h2><i class="bi bi-telephone-fill"></i> Contacto</h2>
-                        <a href="contacto.html">Escríbenos aquí</a>
-                        <br>
-                        <a href="tel:918473685">91 847 36 85</a>
-                        <br>
-                        <a href="https://www.google.com/maps?cid=17699163555285892273">
-                            Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)
-                        </a>
-                    </div>
+                    </p>
                 </div>
             </div>
 
-            <section id="alquiler" class="container mt-3 mb-5">
-                <h2>Alquiler de Espacios Eleaseloop</h2>
-                <a href="https://www.eleaseloop.com/es" target="_blank"><img src="images/eleaseloop.jpg" class="card-img-top" alt="Eleaseloop"></a>
-                <h3 class="mt-3">Eleaseloop convierte cada rincón en una oportunidad para hacer crecer tu negocio.</h3>
-                <p class="mt-3">
-                    Nos especializamos en conectar marcas con los mejores espacios temporales.
-                    Elige entre una variedad de ubicaciones en centros comerciales y otros lugares destacados para exponer tu marca en entornos
-                    de alto impacto. La plataforma facilita el proceso para que puedas reservar el espacio ideal de forma rápida y sencilla,
-                    contando con el respaldo necesario para llevar adelante tu proyecto.<br><br>
-                    Explora espacios con todos los detalles que necesitas: información sobre el público, características del entorno,
-                    fotos de cada espacio y mucho más.
-                </p>
-            </section>
+            <div class="d-flex justify-content-center mb-5">
+                <div style="width: 100%; max-width: 800px; aspect-ratio: 3 / 2;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3026.6697374570485!2d-3.75472!3d40.65921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd417de35e5ae26b%3A0xf5a00f7ab65afcb1!2sCentro%20Comercial%20el%20Ventanal%20de%20la%20Sierra!5e0!3m2!1ses!2ses!4v1589193342710!5m2!1ses!2ses"
+                        style="border:0; width:100%; height:100%;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
 
-            <!-- Servicios -->
-            <section id="servicios" class="container mt-3 mb-5">
-                <h2>Servicios</h2>
-                <!--En pantallas pequeñas: 1 tarjeta por fila.
+            <div class="text-center mb-5">
+                <h2>Plano</h2>
+                <img src="images/plano.png" alt="Plano" class="img-fluid" style="max-width: 90%; height: auto;">
+            </div>
+
+            <div class="row justify-content-center text-center mb-3">
+                <!-- Horarios -->
+                <div class="col-12 col-md-6 mb-4">
+                    <h2><i class="bi bi-clock-fill"></i> Horarios</h2>
+                    <p>
+                        Comercial: 10:00 a 22:00<br />
+                        Hipermercado: 09:00 a 22:00<br />
+                        Restauración:<br />
+                        Lun-Jue: 09:00 a 23:30<br />
+                        Vie-Sab: 09:00 a 01:00<br />
+                        Dom: 09:00 a 23:30
+                    </p>
+                </div>
+
+                <!-- Contacto -->
+                <div class="col-12 col-md-6 mb-3">
+                    <h2><i class="bi bi-telephone-fill"></i> Contacto</h2>
+                    <a href="contacto.html">Escríbenos aquí</a>
+                    <br>
+                    <a href="tel:918473685">91 847 36 85</a>
+                    <br>
+                    <a href="https://www.google.com/maps?cid=17699163555285892273">
+                        Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <section id="alquiler" class="container mt-3 mb-5">
+            <h2>Alquiler de Espacios Eleaseloop</h2>
+            <a href="https://www.eleaseloop.com/es" target="_blank"><img src="images/eleaseloop.jpg"
+                    class="card-img-top" alt="Eleaseloop"></a>
+            <h3 class="mt-3">Eleaseloop convierte cada rincón en una oportunidad para hacer crecer tu negocio.</h3>
+            <p class="mt-3">
+                Nos especializamos en conectar marcas con los mejores espacios temporales.
+                Elige entre una variedad de ubicaciones en centros comerciales y otros lugares destacados para exponer
+                tu marca en entornos
+                de alto impacto. La plataforma facilita el proceso para que puedas reservar el espacio ideal de forma
+                rápida y sencilla,
+                contando con el respaldo necesario para llevar adelante tu proyecto.<br><br>
+                Explora espacios con todos los detalles que necesitas: información sobre el público, características del
+                entorno,
+                fotos de cada espacio y mucho más.
+            </p>
+        </section>
+
+        <!-- Servicios -->
+        <section id="servicios" class="container mt-3 mb-5">
+            <h2>Servicios</h2>
+            <!--En pantallas pequeñas: 1 tarjeta por fila.
                 En pantallas medianas y grandes: 3 tarjetas por fila-->
-                <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                    <img src="images/centro-comercial-3.jpg" class="card-img-top" alt="Parking" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-arrow-right"></i> Parking Gratuito</h5>
-                        <p class="card-text">
-                        Dispones de espacio gratuito para aparcar tu coche y poder acceder cómodamente al centro.
-                        </p>
-                    </div>
+                        <img src="images/centro-comercial-3.jpg" class="card-img-top" alt="Parking" />
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-arrow-right"></i> Parking Gratuito</h5>
+                            <p class="card-text">
+                                Dispones de espacio gratuito para aparcar tu coche y poder acceder cómodamente al
+                                centro.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="card h-100">
-                    <img src="images/centro-comercial-4.jpg" class="card-img-top" alt="USB" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-arrow-right"></i> Punto de carga dispositivos electrónicos USB</h5>
-                        <p class="card-text">
-                        Tienes conexiones USB disponibles para tu móvil, tablet o portátil.
-                        </p>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100">
-                    <img src="images/centro-comercial-5.jpg" class="card-img-top" alt="Wifi" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-arrow-right"></i> Wifi gratuito</h5>
-                        <p class="card-text">En todo en el Centro Comercial tienes una red wifi gratuita.</p>
-                    </div>
+                        <img src="images/centro-comercial-4.jpg" class="card-img-top" alt="USB" />
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-arrow-right"></i> Punto de carga dispositivos
+                                electrónicos USB</h5>
+                            <p class="card-text">
+                                Tienes conexiones USB disponibles para tu móvil, tablet o portátil.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="card h-100">
-                    <img src="images/centro-comercial-6.jpg" class="card-img-top" alt="Parking" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-arrow-right"></i> Amazon Locker</h5>
-                        <p class="card-text">
-                        Haz tu pedido en Amazon y recógelo aquí durante nuestro horario comercial.
-                        </p>
-                    </div>
+                        <img src="images/centro-comercial-5.jpg" class="card-img-top" alt="Wifi" />
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-arrow-right"></i> Wifi gratuito</h5>
+                            <p class="card-text">En todo en el Centro Comercial tienes una red wifi gratuita.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="card h-100">
-                    <img src="images/centro-comercial-7.jpg" class="card-img-top" alt="Descanso" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-arrow-right"></i> Áreas de descanso</h5>
-                        <p class="card-text">Disponibles en el centro para que puedas descansar cómodamente.</p>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100">
-                    <img src="images/centro-comercial-8.jpg" class="card-img-top" alt="Discapacidad" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-arrow-right"></i> Aseos para personas con discapacidad</h5>
-                        <p class="card-text">Aseos accesibles para todos los públicos.</p>
-                    </div>
+                        <img src="images/centro-comercial-6.jpg" class="card-img-top" alt="Parking" />
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-arrow-right"></i> Amazon Locker</h5>
+                            <p class="card-text">
+                                Haz tu pedido en Amazon y recógelo aquí durante nuestro horario comercial.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="card h-100">
-                    <img src="images/centro-comercial-9.jpg" class="card-img-top" alt="Cajero" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-arrow-right"></i> Cajeros automáticos</h5>
-                        <p class="card-text">Podrás disponer de dinero en efectivo en cualquier momento.</p>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100">
-                    <img src="images/centro-comercial-10.jpg" class="card-img-top" alt="Cardio" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-arrow-right"></i> Columna Cardio Protección</h5>
-                        <p class="card-text">Instalados por todo el Centro Comercial en caso de urgencia.</p>
-                    </div>
+                        <img src="images/centro-comercial-7.jpg" class="card-img-top" alt="Descanso" />
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-arrow-right"></i> Áreas de descanso</h5>
+                            <p class="card-text">Disponibles en el centro para que puedas descansar cómodamente.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="card h-100">
-                    <img src="images/centro-comercial-11.jpg" class="card-img-top" alt="Dog" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-arrow-right"></i> Dog Friendly</h5>
-                        <p class="card-text">
-                        Somos DogFriendly en nuestras zonas comunes. Dentro de cada establecimiento, este se reserva el derecho de acceso.
-                        </p>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100">
-                    <img src="images/centro-comercial-12.jpg" class="card-img-top" alt="Gasolinera" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-arrow-right"></i> Gasolinera</h5>
-                        <p class="card-text">Aprovecha tu visita para cómodamente llenar tu deposito.</p>
-                    </div>
+                        <img src="images/centro-comercial-8.jpg" class="card-img-top" alt="Discapacidad" />
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-arrow-right"></i> Aseos para personas con
+                                discapacidad</h5>
+                            <p class="card-text">Aseos accesibles para todos los públicos.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col">
                     <div class="card h-100">
-                    <img src="images/centro-comercial-13.jpg" class="card-img-top" alt="Parking" />
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="bi bi-arrow-right"></i> Lavado de coches</h5>
-                        <p class="card-text">
-                        ¡Nos gusta ser brillantes! ¿Quieres presumir de coche reluciente? En nuestro parking subterráneo encontrarás un lavadero de coches especializado, con el que te garantizamos los mejores resultados.
-                        </p>
+                        <img src="images/centro-comercial-9.jpg" class="card-img-top" alt="Cajero" />
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-arrow-right"></i> Cajeros automáticos</h5>
+                            <p class="card-text">Podrás disponer de dinero en efectivo en cualquier momento.</p>
+                        </div>
                     </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/centro-comercial-10.jpg" class="card-img-top" alt="Cardio" />
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-arrow-right"></i> Columna Cardio Protección</h5>
+                            <p class="card-text">Instalados por todo el Centro Comercial en caso de urgencia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/centro-comercial-11.jpg" class="card-img-top" alt="Dog" />
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-arrow-right"></i> Dog Friendly</h5>
+                            <p class="card-text">
+                                Somos DogFriendly en nuestras zonas comunes. Dentro de cada establecimiento, este se
+                                reserva el derecho de acceso.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/centro-comercial-12.jpg" class="card-img-top" alt="Gasolinera" />
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-arrow-right"></i> Gasolinera</h5>
+                            <p class="card-text">Aprovecha tu visita para cómodamente llenar tu deposito.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="images/centro-comercial-13.jpg" class="card-img-top" alt="Parking" />
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="bi bi-arrow-right"></i> Lavado de coches</h5>
+                            <p class="card-text">
+                                ¡Nos gusta ser brillantes! ¿Quieres presumir de coche reluciente? En nuestro parking
+                                subterráneo encontrarás un lavadero de coches especializado, con el que te garantizamos
+                                los mejores resultados.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col">
                     <a href="https://elventanaldelasierra.es/servicios">CONOCE TODOS LOS SERVIVIOS</a>
                 </div>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Noticias -->
-            <section id="noticias" class="container my-5" style="position: relative">
+        <!-- Noticias -->
+        <section id="noticias" class="container my-5" style="position: relative">
             <h2 id="Noticias" class="text-center">Noticias en El Ventanal de la Sierra</h2>
             <div class="row">
                 <div class="col">
-                <img src="images/centro-comercial-16.jpg" class="img-fluid" alt="Noticia 1" id="noticia1"/>
-                <p>06-05-2025</p>
-                <h4>
-                    <a href="https://elventanaldelasierra.es/blog/6-ideas-para-decorar-el-jardin-en-verano/">6 ideas para decorar el jardín en verano</a>
-                </h4>
-                <p>
-                    Anota estas 6 ideas para decorar el jardín en verano y disfruta de tu espacio exterior con estilo.
-                </p>
+                    <img src="images/centro-comercial-16.jpg" class="img-fluid" alt="Noticia 1" id="noticia1" />
+                    <p>06-05-2025</p>
+                    <h4>
+                        <a href="https://elventanaldelasierra.es/blog/6-ideas-para-decorar-el-jardin-en-verano/">6 ideas
+                            para decorar el jardín en verano</a>
+                    </h4>
+                    <p>
+                        Anota estas 6 ideas para decorar el jardín en verano y disfruta de tu espacio exterior con
+                        estilo.
+                    </p>
                 </div>
                 <div class="col">
-                <img src="images/centro-comercial-17.jpg" class="img-fluid" alt="Noticia 2" id="noticia2"/>
-                <p>08-04-2025</p>
-                <h4>
-                    <a href="https://elventanaldelasierra.es/blog/remedios-naturales-para-alergias-y-como-aliviarlas/">Remedios naturales para alergias y cómo aliviarlas</a>
-                </h4>
-                <p>
-                    Descubre los remedios naturales para alergias que más te pueden ayudar a aliviar los síntomas. Cuida tu cuerpo esta primavera de manera natural...
-                </p>
+                    <img src="images/centro-comercial-17.jpg" class="img-fluid" alt="Noticia 2" id="noticia2" />
+                    <p>08-04-2025</p>
+                    <h4>
+                        <a
+                            href="https://elventanaldelasierra.es/blog/remedios-naturales-para-alergias-y-como-aliviarlas/">Remedios
+                            naturales para alergias y cómo aliviarlas</a>
+                    </h4>
+                    <p>
+                        Descubre los remedios naturales para alergias que más te pueden ayudar a aliviar los síntomas.
+                        Cuida tu cuerpo esta primavera de manera natural...
+                    </p>
                 </div>
                 <div class="col">
-                <img src="images/centro-comercial-18.jpg" class="img-fluid" alt="Noticia 3" id="noticia3"/>
-                <p>07-03-2025</p>
-                <h4>
-                    <a href="https://elventanaldelasierra.es/blog/como-celebrar-un-cumpleanos-para-que-sea-inolvidable/">Cómo celebrar un cumpleaños para que sea inolvidable</a>
-                </h4>
-                <p>
-                    Tus hijos se merecen lo mejor, sobre todo en su día especial. Por eso, te contamos cómo celebrar un cumpleaños infantil para que sea inolvidable....
-                </p>
+                    <img src="images/centro-comercial-18.jpg" class="img-fluid" alt="Noticia 3" id="noticia3" />
+                    <p>07-03-2025</p>
+                    <h4>
+                        <a
+                            href="https://elventanaldelasierra.es/blog/como-celebrar-un-cumpleanos-para-que-sea-inolvidable/">Cómo
+                            celebrar un cumpleaños para que sea inolvidable</a>
+                    </h4>
+                    <p>
+                        Tus hijos se merecen lo mejor, sobre todo en su día especial. Por eso, te contamos cómo celebrar
+                        un cumpleaños infantil para que sea inolvidable....
+                    </p>
                 </div>
             </div>
-            </section>
+        </section>
 
-        </article>
+    </article>
 
-        <!-- Footer -->
-        <footer class="container-fluid bg-dark text-white">
-            <!--fila con margen horizontal (x) mx-1 (pequeño) mx-md-2(medio) mx-lg-5 (grandes)
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white">
+        <!--fila con margen horizontal (x) mx-1 (pequeño) mx-md-2(medio) mx-lg-5 (grandes)
          px-*: Padding horizontal (relleno interno): px-1: poco espacio en pantallas pequeñas. 
         pt-5: Padding superior (espacio interno arriba) grande.-->
-            <div class="row mx-1 mx-md-2 px-1 px-md-2 px-lg-5 pt-5">
-                <!--col-lg-*: Columnas en pantallas grandes: col-lg-4: Ocupa 4 de 12 columnas, ect.-->
-                <div class="col-lg-4">
-                    <p>
-                        Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
-                        proporcionarles emociones.
-                    </p>
-                    <a href="https://www.nhood.es/" target="_blank">
-                        <img src="images/logo-centro-comercial-2.png" alt="Logo Nhood" />
+        <div class="row mx-1 mx-md-2 px-1 px-md-2 px-lg-5 pt-5">
+            <!--col-lg-*: Columnas en pantallas grandes: col-lg-4: Ocupa 4 de 12 columnas, ect.-->
+            <div class="col-lg-4">
+                <p>
+                    Con el fin de que los clientes visiten y vuelvan, buscamos sorprenderlos constantemente y
+                    proporcionarles emociones.
+                </p>
+                <a href="https://www.nhood.es/" target="_blank">
+                    <img src="images/logo-centro-comercial-2.png" alt="Logo Nhood" />
+                </a>
+            </div>
+            <div class="col-lg-3">
+                <h5><i class="bi bi-clock-fill"></i> Horarios</h5>
+                <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
+            </div>
+            <div class="col-lg-4">
+                <h5><i class="bi bi-telephone-fill"></i> Contacto</h5>
+                <p>
+                    <a href="contacto.html"><i class="bi bi-envelope-at-fill"></i> Escríbenos</a><br />
+                    <a href="tel:918473685"><i class="bi bi-phone"></i> 91 847 36 85</a>
+                </p>
+                <p>
+                    <a href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank">
+                        <i class="bi bi-geo-alt-fill"></i> Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)
                     </a>
-                </div>
-                <div class="col-lg-3">
-                    <h5><i class="bi bi-clock-fill"></i> Horarios</h5>
-                    <p>Comercial: 10:00 a 22:00<br />Hipermercado: 09:00 a 22:00<br />Restauración: hasta 01:00</p>
-                </div>
-                <div class="col-lg-4">
-                    <h5><i class="bi bi-telephone-fill"></i> Contacto</h5>
-                    <p>
-                        <a href="contacto.html"><i class="bi bi-envelope-at-fill"></i> Escríbenos</a><br />
-                        <a href="tel:918473685"><i class="bi bi-phone"></i> 91 847 36 85</a>
-                    </p>
-                    <p>
-                        <a href="https://maps.app.goo.gl/VYRCKo2KujVkcdku9" target="_blank">
-                            <i class="bi bi-geo-alt-fill"></i> Avda. De la Tejera, 2. 28770 - Colmenar Viejo (Madrid)
-                        </a>
-                    </p>
-                </div>
-                <!--d-flex: convierte el contenedor en un flex container (horizontal por defecto).
+                </p>
+            </div>
+            <!--d-flex: convierte el contenedor en un flex container (horizontal por defecto).
                 align-items-center: centra verticalmente los íconos.
                 justify-content-center: centra horizontalmente. -->
-                <div class="col-lg-1 d-flex align-items-center justify-content-center">
-                    <a href="https://www.facebook.com/elventanaldelasierra" target="_blank">
-                        <i class="bi bi-facebook fs-4 me-2"></i>
-                    </a>
-                    <a href="https://www.youtube.com/user/elventanaldelasierra" target="_blank">
-                        <i class="bi bi-youtube fs-4 me-2"></i>
-                    </a>
-                    <a href="https://www.instagram.com/elventanaldelasierracc/" target="_blank">
-                        <i class="bi bi-instagram fs-4"></i>
-                    </a>
+            <div class="col-lg-1 d-flex align-items-center justify-content-center">
+                <a href="https://www.facebook.com/elventanaldelasierra" target="_blank">
+                    <i class="bi bi-facebook fs-4 me-2"></i>
+                </a>
+                <a href="https://www.youtube.com/user/elventanaldelasierra" target="_blank">
+                    <i class="bi bi-youtube fs-4 me-2"></i>
+                </a>
+                <a href="https://www.instagram.com/elventanaldelasierracc/" target="_blank">
+                    <i class="bi bi-instagram fs-4"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- fila con mt-5: margen superior grande. pb-3: padding inferior pequeño .
+            pb-md-5: padding inferior grande en pantallas medianas o superiores.-->
+        <div class="row text-center text-md-start mt-5 pb-3 pb-md-5 mx-1 mx-md-2 mx-lg-5 px-1 px-md-2 px-lg-5">
+            <!-- En pantallas medianas o más grandes, ocupa el 100% del ancho. -->
+            <div class="col-md-12">
+                <p>
+                    © El Ventanal de la Sierra 2025 -
+                    <a href="aviso_legal.html">Aviso legal</a> -
+                    <a href="https://elventanaldelasierra.es/politica-privacidad">Política de privacidad</a> -
+                    <a href="https://elventanaldelasierra.es/politica-cookies">Política de Cookies</a>
+                </p>
+                <!-- Botón para abrir el modal de gestión de cookies -->
+                <div class="localbox">
+                    <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Cookies">
+                        Gestionar preferencias de Cookies
+                    </button>
                 </div>
             </div>
+        </div>
 
-            <!-- fila con mt-5: margen superior grande. pb-3: padding inferior pequeño .
-            pb-md-5: padding inferior grande en pantallas medianas o superiores.-->
-            <div class="row text-center text-md-start mt-5 pb-3 pb-md-5 mx-1 mx-md-2 mx-lg-5 px-1 px-md-2 px-lg-5">
-                <!-- En pantallas medianas o más grandes, ocupa el 100% del ancho. -->
-                <div class="col-md-12">
-                    <p>
-                        © El Ventanal de la Sierra 2025 -
-                        <a href="aviso_legal.html">Aviso legal</a> -
-                        <a href="https://elventanaldelasierra.es/politica-privacidad">Política de privacidad</a> -
-                        <a href="https://elventanaldelasierra.es/politica-cookies">Política de Cookies</a>
-                    </p>
-                    <!-- Botón para abrir el modal de gestión de cookies -->
-                    <div class="localbox">
-                        <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#Cookies">
-                            Gestionar preferencias de Cookies
+        <!-- Modal Cookies -->
+        <!-- Modal para configuración de cookies -->
+        <div class="modal" id="Cookies" tabindex="-1">
+            <!--define el contenedor de contenido del modal. modal-xl: tamaño extra grande (ancho).-->
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <!-- Encabezado del modal -->
+                    <div class="modal-header">
+                        <h2 class="modal-title"><strong>Preferencias de Consentimiento</strong></h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <!-- Cuerpo del modal con descripción y acordeón -->
+                    <div class="modal-body">
+                        <p class="mt-1">
+                            <strong>Tu privacidad es importante para nosotros</strong><br /><br />
+                            Las cookies son pequeños archivos de texto que se almacenan en tu navegador cuando
+                            visitas nuestra web. Utilizamos cookies para diferentes objetivos y para mejorar tu
+                            experiencia en nuestro sitio web (por ejemplo, para recordar tus detalles de acceso).
+                            Puedes cambiar tus preferencias y rechazar que algunos tipos de cookies sean almacenados
+                            mientras estás navegando en nuestra web. También puedes cancelar cualquier cookie ya
+                            almacenada en tu navegador, pero recuerda que cancelar las cookies puede impedirte
+                            utilizar algunas partes de nuestra web.
+                        </p>
+
+                        <!-- contenedor general del acordeón.
+                             accordion-flush: elimina bordes y espacios exteriores, estilo más limpio.-->
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <!-- Cookies necesarias -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNecesarias">
+                                    <!--accordion-button: botón que expande o contrae el acordeón.
+                                       collapsed: indica que el panel está contraído inicialmente.-->
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseNecesarias" aria-expanded="false"
+                                        aria-controls="collapseNecesarias">
+                                        Cookies Estrictamente Necesarias
+                                        <!--form-check: clase base para un elemento de formulario.
+                                            form-switch: convierte un checkbox en un interruptor tipo switch.
+                                            ms-3: margen izquierdo (start) para separar el switch del texto (espaciado hacia la derecha en LTR).
+                                            -->
+                                        <label class="form-check form-switch ms-3">
+                                            <input type="checkbox" class="form-check-input" checked disabled />
+                                            Siempre habilitadas
+                                        </label>
+                                    </button>
+                                </h2>
+                                <div id="collapseNecesarias" class="accordion-collapse collapse"
+                                    aria-labelledby="headingNecesarias" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Estas cookies son esenciales para proveerte los servicios disponibles en
+                                        nuestra web y para permitirte utilizar algunas características de nuestra
+                                        web. Sin estas cookies, no podemos proveer algunos servicios de nuestro
+                                        sitio web.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cookies analíticas -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingAnaliticas">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseAnaliticas" aria-expanded="false"
+                                        aria-controls="collapseAnaliticas">
+                                        Cookies Analíticas
+                                        <!-- Interruptor de activación -->
+                                        <label class="form-check form-switch ms-3">
+                                            <input type="checkbox" class="form-check-input" />
+                                            1 Servicio
+                                        </label>
+                                    </button>
+                                </h2>
+                                <div id="collapseAnaliticas" class="accordion-collapse collapse"
+                                    aria-labelledby="headingAnaliticas" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <strong>Google Analytics</strong><br />
+                                        Estas cookies son utilizadas para recopilar información, para analizar el
+                                        tráfico y la forma en que los usuarios utilizan nuestra web. Por ejemplo,
+                                        estas cookies pueden recopilar datos como cuánto tiempo llevas navegado en
+                                        nuestro sitio web o qué páginas visitas, cosa que nos ayuda a comprender
+                                        cómo podemos mejorar nuestra web para ti. La información recopilada con
+                                        estas cookies de rastreo y rendimiento no identifican a ningún visitante
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <strong>Más información</strong><br />
+                            Para cualquier duda en relación con nuestra política de cookies y tus preferencias,
+                            infórmate en nuestra
+                            <a href="https://elventanaldelasierra.es/politica-cookies">
+                                <strong>Política de Cookies</strong> </a>.
+                        </p>
+                    </div>
+                    <!-- Pie del modal con botones de acción -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar todas</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Rechazar todas</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                            Guardar Preferencias
                         </button>
                     </div>
                 </div>
             </div>
+        </div>
+    </footer>
+</body>
 
-            <!-- Modal Cookies -->
-            <!-- Modal para configuración de cookies -->
-            <div class="modal" id="Cookies" tabindex="-1">
-                <!--define el contenedor de contenido del modal. modal-xl: tamaño extra grande (ancho).-->
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <!-- Encabezado del modal -->
-                        <div class="modal-header">
-                            <h2 class="modal-title"><strong>Preferencias de Consentimiento</strong></h2>
-                            <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Cerrar"></button>
-                        </div>
-                        <!-- Cuerpo del modal con descripción y acordeón -->
-                        <div class="modal-body">
-                            <p class="mt-1">
-                                <strong>Tu privacidad es importante para nosotros</strong><br /><br />
-                                Las cookies son pequeños archivos de texto que se almacenan en tu navegador cuando
-                                visitas nuestra web. Utilizamos cookies para diferentes objetivos y para mejorar tu
-                                experiencia en nuestro sitio web (por ejemplo, para recordar tus detalles de acceso).
-                                Puedes cambiar tus preferencias y rechazar que algunos tipos de cookies sean almacenados
-                                mientras estás navegando en nuestra web. También puedes cancelar cualquier cookie ya
-                                almacenada en tu navegador, pero recuerda que cancelar las cookies puede impedirte
-                                utilizar algunas partes de nuestra web.
-                            </p>
-
-                            <!-- contenedor general del acordeón.
-                             accordion-flush: elimina bordes y espacios exteriores, estilo más limpio.-->
-                            <div class="accordion accordion-flush" id="accordionFlushExample">
-                                <!-- Cookies necesarias -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingNecesarias">
-                                        <!--accordion-button: botón que expande o contrae el acordeón.
-                                       collapsed: indica que el panel está contraído inicialmente.-->
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapseNecesarias"
-                                            aria-expanded="false"
-                                            aria-controls="collapseNecesarias">
-                                            Cookies Estrictamente Necesarias
-                                            <!--form-check: clase base para un elemento de formulario.
-                                            form-switch: convierte un checkbox en un interruptor tipo switch.
-                                            ms-3: margen izquierdo (start) para separar el switch del texto (espaciado hacia la derecha en LTR).
-                                            -->
-                                            <label class="form-check form-switch ms-3">
-                                                <input type="checkbox" class="form-check-input" checked disabled />
-                                                Siempre habilitadas
-                                            </label>
-                                        </button>
-                                    </h2>
-                                    <div
-                                        id="collapseNecesarias"
-                                        class="accordion-collapse collapse"
-                                        aria-labelledby="headingNecesarias"
-                                        data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            Estas cookies son esenciales para proveerte los servicios disponibles en
-                                            nuestra web y para permitirte utilizar algunas características de nuestra
-                                            web. Sin estas cookies, no podemos proveer algunos servicios de nuestro
-                                            sitio web.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Cookies analíticas -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingAnaliticas">
-                                        <button
-                                            class="accordion-button collapsed"
-                                            type="button"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#collapseAnaliticas"
-                                            aria-expanded="false"
-                                            aria-controls="collapseAnaliticas">
-                                            Cookies Analíticas
-                                            <!-- Interruptor de activación -->
-                                            <label class="form-check form-switch ms-3">
-                                                <input type="checkbox" class="form-check-input" />
-                                                1 Servicio
-                                            </label>
-                                        </button>
-                                    </h2>
-                                    <div
-                                        id="collapseAnaliticas"
-                                        class="accordion-collapse collapse"
-                                        aria-labelledby="headingAnaliticas"
-                                        data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">
-                                            <strong>Google Analytics</strong><br />
-                                            Estas cookies son utilizadas para recopilar información, para analizar el
-                                            tráfico y la forma en que los usuarios utilizan nuestra web. Por ejemplo,
-                                            estas cookies pueden recopilar datos como cuánto tiempo llevas navegado en
-                                            nuestro sitio web o qué páginas visitas, cosa que nos ayuda a comprender
-                                            cómo podemos mejorar nuestra web para ti. La información recopilada con
-                                            estas cookies de rastreo y rendimiento no identifican a ningún visitante
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>
-                                <strong>Más información</strong><br />
-                                Para cualquier duda en relación con nuestra política de cookies y tus preferencias,
-                                infórmate en nuestra
-                                <a href="https://elventanaldelasierra.es/politica-cookies">
-                                    <strong>Política de Cookies</strong> </a
-                                >.
-                            </p>
-                        </div>
-                        <!-- Pie del modal con botones de acción -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar todas</button>
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Rechazar todas</button>
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
-                                Guardar Preferencias
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>
 </html>
