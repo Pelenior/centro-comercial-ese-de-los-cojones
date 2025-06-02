@@ -138,7 +138,7 @@
                 <h2>SITUACIÓN</h2>
                 <h5>CARTELERA</h5>
                 <div class="container-fluid mt-5">
-                    <div class="row flex-nowrap overflow-auto pb-3" id="cartelera-container">
+                    <div class="row flex-nowrap overflow-auto pb-3" id="cartelera">
                     </div>
                 </div>
             </section>
@@ -374,12 +374,12 @@
         fetch('cartelera.json')
             .then(response => {
                 if (!response.ok) {
-                    throw new Error('Error al cargar cartelera.json');
+                    throw new Error('Error en cartelera.json');
                 }
                 return response.json();
             })
             .then(peliculas => {
-                const container = document.getElementById("cartelera-container");
+                const container = document.getElementById("cartelera");
                 let html = '<div class="row gx-2 justify-content-start">';
 
                 peliculas.forEach((pelicula, i) => {
@@ -416,7 +416,7 @@
                 });
             })
             .catch(error => {
-                console.error('Error cargando la cartelera:', error);
+                console.error('Error en cartelera:', error);
             });
     </script>
 
