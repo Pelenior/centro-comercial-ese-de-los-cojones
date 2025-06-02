@@ -371,20 +371,22 @@
 
     <!-- JavaScript -->
     <script>
-        fetch('cartelera.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Error en cartelera.json');
-                }
-                return response.json();
-            })
-            .then(peliculas => {
-                const container = document.getElementById("cartelera");
-                let html = '<div class="row gx-2 justify-content-start">';
+        /* Función que carga el archivo JSON usando XMLHttpRequest */
+        function cargarCartelera() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "cartelera.json", true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var peliculas = JSON.parse(xhr.responseText);
+                    var container = document.getElementById("cartelera");
 
-                peliculas.forEach((pelicula, i) => {
-                    html += `
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-3">
+                    container.innerHTML = '';
+
+                    peliculas.forEach(function (pelicula, i) {
+                        var colDiv = document.createElement("div");
+                        colDiv.className = "col-6 col-sm-4 col-md-3 col-lg-2 text-center mb-3";
+
+                        colDiv.innerHTML = `
                         <h6 class="fw-bold mb-1">${pelicula.título}</h6>
                         <p class="text-muted small mb-1">${pelicula.director}</p>
                         <img src="${pelicula.imagen}" 
@@ -394,31 +396,31 @@
                              data-index="${i}" 
                              data-bs-toggle="modal" 
                              data-bs-target="#infoPeliculaModal" />
-                    </div>`;
-                });
-
-                html += '</div>';
-                container.innerHTML = html;
-
-                // Evento para llenar el modal
-                document.querySelectorAll('img[data-bs-target="#infoPeliculaModal"]').forEach(img => {
-                    img.addEventListener('click', (e) => {
-                        const index = e.target.getAttribute('data-index');
-                        const peli = peliculas[index];
-
-                        document.getElementById('modalTitulo').textContent = peli.título;
-                        document.getElementById('modalDirector').textContent = peli.director;
-                        document.getElementById('modalActores').textContent = peli.actores.join(', ');
-                        document.getElementById('modalSinopsis').textContent = peli.sinopsis;
-                        document.getElementById('modalImagen').src = peli.imagen;
-                        document.getElementById('modalImagen').alt = peli.título;
+                    `;
+                        container.appendChild(colDiv);
                     });
-                });
-            })
-            .catch(error => {
-                console.error('Error en cartelera:', error);
-            });
+
+                    // Evento para llenar el modal
+                    document.querySelectorAll('img[data-bs-target="#infoPeliculaModal"]').forEach(function (img) {
+                        img.addEventListener('click', function (e) {
+                            var index = e.target.getAttribute('data-index');
+                            var peli = peliculas[index];
+
+                            document.getElementById('modalTitulo').textContent = peli.título;
+                            document.getElementById('modalDirector').textContent = peli.director;
+                            document.getElementById('modalActores').textContent = peli.actores.join(', ');
+                            document.getElementById('modalSinopsis').textContent = peli.sinopsis;
+                            document.getElementById('modalImagen').src = peli.imagen;
+                            document.getElementById('modalImagen').alt = peli.título;
+                        });
+                    });
+                }
+            };
+            xhr.send();
+        }
+        window.onload = cargarCartelera;
     </script>
+
 
     <!-- Modal -->
     <div class="modal fade" id="infoPeliculaModal">
