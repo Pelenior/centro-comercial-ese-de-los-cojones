@@ -15,12 +15,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
-footer a {
+a {
     text-decoration: none;
     color: deeppink;
 }
 
-footer a:hover {
+a:hover {
     color: mediumpurple;
 }
 
@@ -29,8 +29,6 @@ footer a:hover {
     aspect-ratio: 16/9;
     object-fit: cover;
 }
-
-
 
 
 body {
